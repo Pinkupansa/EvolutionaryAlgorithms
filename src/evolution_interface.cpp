@@ -1,47 +1,67 @@
 #include "evolution_interface.hpp"
 #include <random>
 
-EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm* algorithm, int maxGenerations, double(*fitnessFunction)(int*, int)){
+EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm* algorithm, int maxGenerations, FunctionWrapper* fitnessFunction) {
     this->algorithm = algorithm;
     this->maxGenerations = maxGenerations;
     this->fitnessFunction = fitnessFunction;
-    fitnesses = new double[algorithm->getPopulationSize()];
+    populationFitnesses = new double[algorithm->getPopulationSize()];
+    offspringFitnesses = new double[algorithm->getOffspringSize()];
+
 }
 
 EvolutionInterface::~EvolutionInterface(){
-    delete[] fitnesses;
+    delete[] populationFitnesses;
+    delete[] offspringFitnesses;
 }
 
 void EvolutionInterface::run(){
     srand(time(NULL));
     algorithm->initialize();
-    recalculateFitnesses();
+    std::cout << "EA initialized" << std::endl;
+    calculatePopulationFitnesses();
     for (int i = 0; i < maxGenerations; i++) {
-        algorithm->reproduce();
+        std::cout <<"Generation " << i << std::endl;
+        
+        //std::cout << "Pop fitness calculated" << std::endl;
+        algorithm->reproduce(populationFitnesses);
+        //std::cout << "Reproduce done" << std::endl;
+        //print current offspring
         algorithm->mutate();
-        recalculateFitnesses();
-        algorithm->select(fitnesses);
+        //std::cout << "Mutation done" << std::endl;
+        calculateOffspringFitnesses();
+        //std::cout << "Offspring fitness calculated" << std::endl;
+        algorithm->select(offspringFitnesses);
+        calculatePopulationFitnesses();
+        
         printBestIndividual();
     }
 
 
 }
 
-void EvolutionInterface::recalculateFitnesses(){
+void EvolutionInterface::calculatePopulationFitnesses(){
     bestFitness = 0;
-    int** individuals = algorithm->getCurrentIndividuals();
+    int** individuals = algorithm->getCurrentPopulation();
     for (int i = 0; i < algorithm->getPopulationSize(); i++) {
 
-        fitnesses[i] = fitnessFunction(individuals[i], algorithm->getChromosomeSize());
-        if (fitnesses[i] > bestFitness) {
-            bestFitness = fitnesses[i];
+        populationFitnesses[i] = fitnessFunction->evaluate(individuals[i]);
+        if (populationFitnesses[i] > bestFitness) {
+            bestFitness = populationFitnesses[i];
             bestIndividualIndex = i;
         }
     }
 }
 
+void EvolutionInterface::calculateOffspringFitnesses(){
+    int** individuals = algorithm->getCurrentOffspring();
+    for (int i = 0; i < algorithm->getOffspringSize(); i++) {
+        offspringFitnesses[i] = fitnessFunction->evaluate(individuals[i]);
+    }
+}
+
 int* EvolutionInterface::getBestIndividual(){
-    return algorithm->getCurrentIndividuals()[bestIndividualIndex];
+    return algorithm->getCurrentPopulation()[bestIndividualIndex];
 }
 
 double EvolutionInterface::getBestFitness(){
@@ -50,8 +70,10 @@ double EvolutionInterface::getBestFitness(){
 
 void EvolutionInterface::printBestIndividual(){
     int* bestIndividual = getBestIndividual();
+    std::cout << "Best individual is : ";
     for (int i = 0; i < algorithm->getChromosomeSize(); i++) {
-        std::cout << bestIndividual[i];
+
+        std::cout << bestIndividual[i] << " ";
     }
-    std::cout << " fitness: " << getBestFitness() << std::endl;
+    std::cout << "fitness : " << bestFitness << std::endl;
 }

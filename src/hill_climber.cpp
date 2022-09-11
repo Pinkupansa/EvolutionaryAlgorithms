@@ -27,25 +27,32 @@ void HillClimber::mutate() {
     }
 }
 
-void HillClimber::reproduce() {
+void HillClimber::reproduce(double* populationFitnesses) {
+    currentIndividualFitness = populationFitnesses[0];
     for (int i = 0; i < chromosomeSize; i++) {
         currentOffspring[i] = currentIndividual[i];
     }
 }
 
-void HillClimber::select(double* fitnesses) {
-    if (fitnesses[1] > fitnesses[0]) {
+void HillClimber::select(double* offspringFitnesses) {
+    if (offspringFitnesses[0] > currentIndividualFitness) {
         int* temp = currentIndividual;
         currentIndividual = currentOffspring;
         currentOffspring = temp;
+        currentIndividualFitness = offspringFitnesses[0];
     }
 }
 
-int** HillClimber::getCurrentIndividuals() {
-    int** individuals = new int*[2];
-    individuals[0] = currentIndividual;
-    individuals[1] = currentOffspring;
-    return individuals;
+int** HillClimber::getCurrentPopulation() {
+    int** population = new int*[1];
+    population[0] = currentIndividual;
+    return population;
+}
+
+int** HillClimber::getCurrentOffspring() {
+    int** offspring = new int*[1];
+    offspring[0] = currentOffspring;
+    return offspring;
 }
 
 int HillClimber::getChromosomeSize() {
@@ -53,7 +60,10 @@ int HillClimber::getChromosomeSize() {
 }
 
 int HillClimber::getPopulationSize() {
-    return 2;
+    return 1;
 }
 
+int HillClimber::getOffspringSize() {
+    return 1;
+}
 

@@ -4,11 +4,13 @@
 class EvolutionaryAlgorithm {
     public:
         virtual void initialize() = 0;
-        virtual void reproduce() = 0;
+        virtual void reproduce(double* populationFitnesses) = 0;
         virtual void mutate() = 0;
-        virtual void select(double* fitnesses) = 0;
-        virtual int** getCurrentIndividuals() = 0;
+        virtual void select(double* offspringFitnesses) = 0;
+        virtual int** getCurrentPopulation() = 0;
+        virtual int** getCurrentOffspring() = 0;
         virtual int getPopulationSize() = 0;
+        virtual int getOffspringSize() = 0;
         virtual int getChromosomeSize() = 0;
         
 };
