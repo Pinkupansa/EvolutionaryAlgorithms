@@ -1,81 +1,127 @@
 #include "benchmark_functions.hpp"
 
-OneMax::OneMax(int chromosomeSize) {
+OneMax::OneMax(int chromosomeSize)
+{
     this->chromosomeSize = chromosomeSize;
 }
 
-OneMax::~OneMax() {
+OneMax::~OneMax()
+{
 }
 
-double OneMax::evaluate(int* chromosome) {
+double OneMax::evaluate(int *chromosome)
+{
     double fitness = 0;
-    for (int i = 0; i < chromosomeSize; i++) {
+    for (int i = 0; i < chromosomeSize; i++)
+    {
         fitness += chromosome[i];
     }
     return fitness;
 }
 
-LeadingOnes::LeadingOnes(int chromosomeSize) {
+void OneMax::visualize(int *chromosome)
+{
+    return;
+}
+
+LeadingOnes::LeadingOnes(int chromosomeSize)
+{
     this->chromosomeSize = chromosomeSize;
 }
 
-LeadingOnes::~LeadingOnes() {
+LeadingOnes::~LeadingOnes()
+{
 }
 
-double LeadingOnes::evaluate(int* chromosome) {
+double LeadingOnes::evaluate(int *chromosome)
+{
     double fitness = 0;
-    for (int i = 0; i < chromosomeSize; i++) {
-        if (chromosome[i] == 1) {
+    for (int i = 0; i < chromosomeSize; i++)
+    {
+        if (chromosome[i] == 1)
+        {
             fitness++;
-        } else {
+        }
+        else
+        {
             break;
         }
     }
     return fitness;
 }
 
-Jump::Jump(int chromosomeSize, int jumpSize) {
+void LeadingOnes::visualize(int *chromosome)
+{
+    return;
+}
+
+Jump::Jump(int chromosomeSize, int jumpSize)
+{
     this->chromosomeSize = chromosomeSize;
     this->jumpSize = jumpSize;
 }
 
-Jump::~Jump() {
+Jump::~Jump()
+{
 }
 
-double Jump::evaluate(int* chromosome) {
+double Jump::evaluate(int *chromosome)
+{
     double oneMaxFitness = 0;
-    for (int i = 0; i < chromosomeSize; i++) {
+    for (int i = 0; i < chromosomeSize; i++)
+    {
         oneMaxFitness += chromosome[i];
     }
-    if (oneMaxFitness == chromosomeSize || oneMaxFitness <= chromosomeSize - jumpSize) {
+    if (oneMaxFitness == chromosomeSize || oneMaxFitness <= chromosomeSize - jumpSize)
+    {
         return oneMaxFitness;
-    } else {
+    }
+    else
+    {
         return chromosomeSize - oneMaxFitness;
     }
 }
 
-KnapSack::KnapSack(int chromosomeSize, int* weights, int* values, int knapsackSize) {
+void Jump::visualize(int *chromosome)
+{
+    return;
+}
+
+KnapSack::KnapSack(int chromosomeSize, int *weights, int *values, int knapsackSize)
+{
     this->chromosomeSize = chromosomeSize;
     this->weights = weights;
     this->values = values;
     this->knapsackSize = knapsackSize;
 }
 
-KnapSack::~KnapSack() {
+KnapSack::~KnapSack()
+{
 }
 
-double KnapSack::evaluate(int* chromosome) {
+double KnapSack::evaluate(int *chromosome)
+{
     double fitness = 0;
     int weight = 0;
-    for (int i = 0; i < chromosomeSize; i++) {
-        if (chromosome[i] == 1) {
+    for (int i = 0; i < chromosomeSize; i++)
+    {
+        if (chromosome[i] == 1)
+        {
             fitness += values[i];
             weight += weights[i];
         }
     }
-    if (weight > knapsackSize) {
+    if (weight > knapsackSize)
+    {
         return knapsackSize - weight;
-    } else {
+    }
+    else
+    {
         return fitness;
     }
+}
+
+void KnapSack::visualize(int *chromosome)
+{
+    return;
 }

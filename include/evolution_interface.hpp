@@ -1,35 +1,34 @@
 #ifndef EVOLUTION_INTERFACE_HPP
 #define EVOLUTION_INTERFACE_HPP
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
 #include "evolutionary_algorithm.hpp"
-#include "function_wrapper.hpp"
+#include "problem_wrapper.hpp"
 
-class EvolutionInterface{
+class EvolutionInterface
+{
 
-    public:
-        EvolutionInterface(EvolutionaryAlgorithm* algorithm, int maxGenerations, FunctionWrapper* function);
-        ~EvolutionInterface();
-        void run();
-        int* getBestIndividual();
-        double getBestFitness();
+public:
+    EvolutionInterface(EvolutionaryAlgorithm *algorithm, int maxGenerations, ProblemWrapper *function);
+    ~EvolutionInterface();
+    void run();
+    int *getBestIndividual();
+    double getBestFitness();
 
-        
-    private:
-        EvolutionaryAlgorithm* algorithm;
+private:
+    EvolutionaryAlgorithm *algorithm;
 
-        FunctionWrapper* fitnessFunction;
-        double* populationFitnesses;
-        double* offspringFitnesses;
+    ProblemWrapper *problem;
+    double *populationFitnesses;
+    double *offspringFitnesses;
 
-        int maxGenerations;
-        
-        int bestIndividualIndex;
-        double bestFitness;
+    int maxGenerations;
 
-        void calculatePopulationFitnesses();
-        void calculateOffspringFitnesses();
-        void printBestIndividual();
+    int bestIndividualIndex;
+    double bestFitness;
+
+    void calculatePopulationFitnesses();
+    void calculateOffspringFitnesses();
+    void printBestIndividual();
 };
 
-
-#endif //EVOLUTION_INTERFACE_HPP
+#endif // EVOLUTION_INTERFACE_HPP
