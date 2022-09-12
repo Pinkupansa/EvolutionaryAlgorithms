@@ -3,18 +3,20 @@
 #include <bits/stdc++.h>
 #include "evolutionary_algorithm.hpp"
 #include "problem_wrapper.hpp"
-
 class EvolutionInterface
 {
 
 public:
-    EvolutionInterface(EvolutionaryAlgorithm *algorithm, int maxGenerations, ProblemWrapper *function);
+    EvolutionInterface(EvolutionaryAlgorithm *algorithm, int maxGenerations, ProblemWrapper *function, SDL_Window *window, SDL_Renderer *renderer);
     ~EvolutionInterface();
     void run();
     int *getBestIndividual();
     double getBestFitness();
 
 private:
+    SDL_Window *window;
+    SDL_Renderer *renderer;
+    
     EvolutionaryAlgorithm *algorithm;
 
     ProblemWrapper *problem;

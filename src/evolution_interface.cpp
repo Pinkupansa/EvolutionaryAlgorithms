@@ -1,14 +1,20 @@
 #include "evolution_interface.hpp"
 #include <random>
+#include <SDL2_framerate.h>
 
-EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, int maxGenerations, ProblemWrapper *problem)
+#include <SDL2/SDL_ttf.h>
+
+EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, int maxGenerations, ProblemWrapper *problem, SDL_Window *window, SDL_Renderer *renderer)
 {
     this->algorithm = algorithm;
     this->maxGenerations = maxGenerations;
     this->problem = problem;
+    this->window = window;
+    this->renderer = renderer;
     populationFitnesses = new double[algorithm->getPopulationSize()];
-    offspringFitnesses = new double[algorithm->getOffspringSize()];
+    offspringFitnesses = new double[algorithm->getPopulationSize()];
 }
+
 
 EvolutionInterface::~EvolutionInterface()
 {
@@ -22,9 +28,22 @@ void EvolutionInterface::run()
     algorithm->initialize();
     std::cout << "EA initialized" << std::endl;
     calculatePopulationFitnesses();
+    //use default sdl font
+    TTF_Init();
+    TTF_Font *font = TTF_OpenFont("arial.ttf", 24);
+
     for (int i = 0; i < maxGenerations; i++)
     {
         std::cout << "Generation " << i << std::endl;
+
+        //Write generation number on screen
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+        SDL_RenderClear(renderer);
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+        //Write generation number on screen in white
+        SDL_Surface *generationSurface = TTF_RenderText_Solid(font, ("Generation " + std::to_string(i)).c_str(), {255, 255, 255});
+
+        
 
         // std::cout << "Pop fitness calculated" << std::endl;
         algorithm->reproduce(populationFitnesses);
@@ -36,9 +55,15 @@ void EvolutionInterface::run()
         // std::cout << "Offspring fitness calculated" << std::endl;
         algorithm->select(offspringFitnesses);
         calculatePopulationFitnesses();
-
-        problem->visualize(algorithm->getCurrentPopulation()[0]);
+        
+        problem->visualize(getBestIndividual(), window, renderer);
+        
+        
+        SDL_Delay(100);
+        
         printBestIndividual();
+        
+
     }
 }
 
