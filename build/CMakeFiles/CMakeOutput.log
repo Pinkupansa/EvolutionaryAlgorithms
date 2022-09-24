@@ -445,3 +445,51 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aa511/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aa511.dir/build.make CMakeFiles/cmTC_aa511.dir/build
+gmake[1]: Entering directory '/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa511.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTC_aa511.dir/CheckIncludeFile.c.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_aa511
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa511.dir/link.txt --verbose=1
+/usr/bin/gcc CMakeFiles/cmTC_aa511.dir/CheckIncludeFile.c.o -o cmTC_aa511 
+gmake[1]: Leaving directory '/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f86bf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f86bf.dir/build.make CMakeFiles/cmTC_f86bf.dir/build
+gmake[1]: Entering directory '/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f86bf.dir/src.c.o
+/usr/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f86bf.dir/src.c.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f86bf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f86bf.dir/link.txt --verbose=1
+/usr/bin/gcc CMakeFiles/cmTC_f86bf.dir/src.c.o -o cmTC_f86bf 
+gmake[1]: Leaving directory '/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

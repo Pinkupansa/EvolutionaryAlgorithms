@@ -2,68 +2,60 @@
 #include <random>
 #include <SDL2_framerate.h>
 
-#include <SDL2/SDL_ttf.h>
-
-EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, int maxGenerations, ProblemWrapper *problem, SDL_Window *window, SDL_Renderer *renderer)
+EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, ProblemWrapper *problem, SDL_Window *window, SDL_Renderer *renderer)
 {
     this->algorithm = algorithm;
-    this->maxGenerations = maxGenerations;
     this->problem = problem;
     this->window = window;
     this->renderer = renderer;
-    populationFitnesses = new double[algorithm->getPopulationSize()];
-    offspringFitnesses = new double[algorithm->getPopulationSize()];
-}
+    this->currentGeneration = 1;
 
+    this->populationFitnesses = new double[algorithm->getPopulationSize()];
+    this->offspringFitnesses = new double[algorithm->getPopulationSize()];
+
+    TTF_Init();
+    this->font = TTF_OpenFont("arial.ttf", 24);
+
+    algorithm->initialize();
+    srand(time(NULL));
+    std::cout << "EA initialized" << std::endl;
+    calculatePopulationFitnesses();
+}
 
 EvolutionInterface::~EvolutionInterface()
 {
+    TTF_CloseFont(font);
     delete[] populationFitnesses;
     delete[] offspringFitnesses;
 }
 
-void EvolutionInterface::run()
+void EvolutionInterface::step()
 {
-    srand(time(NULL));
-    algorithm->initialize();
-    std::cout << "EA initialized" << std::endl;
+    std::cout << "Generation " << currentGeneration << std::endl;
+    algorithm->reproduce(populationFitnesses);
+    algorithm->mutate();
+    calculateOffspringFitnesses();
+    algorithm->select(offspringFitnesses);
     calculatePopulationFitnesses();
-    //use default sdl font
-    TTF_Init();
-    TTF_Font *font = TTF_OpenFont("arial.ttf", 24);
 
-    for (int i = 0; i < maxGenerations; i++)
+    printBestIndividual();
+    currentGeneration++;
+
+    if (currentGeneration % 1000 == 0)
     {
-        std::cout << "Generation " << i << std::endl;
+        // Write generation number on screen
+        /*SDL_Color color = {255, 255, 255};
+        char generationText[100];
+        sprintf(generationText, "Generation: %d", currentGeneration);
+        SDL_Surface *surface = TTF_RenderText_Solid(font, generationText, color);
+        SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
+        SDL_Rect rect = {0, 0, 1000, 100};
+        SDL_RenderCopy(renderer, texture, NULL, &rect);
+        SDL_RenderPresent(renderer);
+        SDL_FreeSurface(surface);
+        SDL_DestroyTexture(texture);*/
 
-        //Write generation number on screen
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-        SDL_RenderClear(renderer);
-        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        //Write generation number on screen in white
-        SDL_Surface *generationSurface = TTF_RenderText_Solid(font, ("Generation " + std::to_string(i)).c_str(), {255, 255, 255});
-
-        
-
-        // std::cout << "Pop fitness calculated" << std::endl;
-        algorithm->reproduce(populationFitnesses);
-        // std::cout << "Reproduce done" << std::endl;
-        // print current offspring
-        algorithm->mutate();
-        // std::cout << "Mutation done" << std::endl;
-        calculateOffspringFitnesses();
-        // std::cout << "Offspring fitness calculated" << std::endl;
-        algorithm->select(offspringFitnesses);
-        calculatePopulationFitnesses();
-        
         problem->visualize(getBestIndividual(), window, renderer);
-        
-        
-        SDL_Delay(100);
-        
-        printBestIndividual();
-        
-
     }
 }
 

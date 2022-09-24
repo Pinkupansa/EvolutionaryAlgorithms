@@ -1,22 +1,27 @@
 [
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -g -o CMakeFiles/evolutionary_algorithms.dir/src/main.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
-  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
-},
-{
-  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -g -o CMakeFiles/evolutionary_algorithms.dir/src/hill_climber.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
-  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp"
-},
-{
-  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -g -o CMakeFiles/evolutionary_algorithms.dir/src/benchmark_functions.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
+  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -g -o CMakeFiles/evolutionary_algorithms.dir/src/evolution_interface.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
+  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
 }
 ]
