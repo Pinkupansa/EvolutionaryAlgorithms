@@ -1,5 +1,4 @@
 #include "elitist_ea.hpp"
-#include <random>
 #include <algorithm>
 #include <iostream>
 
@@ -11,15 +10,15 @@ void copy(int *array, int *target, int size)
     }
 }
 
-ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, double mutationConstant)
+ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator* mutationOperator)
 {
     this->populationSize = populationSize;
     this->offspringSize = offspringSize;
     this->chromosomeSize = chromosomeSize;
-    this->mutationRate = mutationConstant / chromosomeSize;
     this->population = new int *[populationSize];
     this->offspring = new int *[offspringSize];
     this->populationFitnesses = new double[populationSize];
+    this->mutationOperator = mutationOperator;
 
     for (int i = 0; i < populationSize; i++)
     {
@@ -85,14 +84,7 @@ void ElitistEA::mutate()
 {
     for (int i = 0; i < offspringSize; i++)
     {
-        for (int j = 0; j < chromosomeSize; j++)
-        {
-
-            if (rand() % 100 < mutationRate * 100)
-            {
-                offspring[i][j] = !offspring[i][j];
-            }
-        }
+        mutationOperator->mutate(offspring[i], chromosomeSize);
     }
 }
 

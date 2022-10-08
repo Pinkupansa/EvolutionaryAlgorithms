@@ -4,7 +4,7 @@
 #include "hill_climber.hpp"
 #include "evolution_interface.hpp"
 #include "elitist_ea.hpp"
-
+#include "standard_bit_mutation.hpp"
 // Function that creates a fully operational SDL2 window
 SDL_Window *createWindow(int width, int height, const char *title)
 {
@@ -63,11 +63,12 @@ int main(int argc, char **argv)
 
     int knapsackSize = 80;
 
-    // KnapSack knapSack(chromosomeSize, weights, values, knapsackSize);
-    Jump jump(chromosomeSize, 10);
-    ElitistEA elitist(1, 1, chromosomeSize, 10);
+    KnapSack knapSack(chromosomeSize, weights, values, knapsackSize);
+    //Jump jump(chromosomeSize, 10);
+    StandardBitMutation *mutationOperator = new StandardBitMutation(10/(0.+ chromosomeSize));
+    ElitistEA elitist(10, 10, chromosomeSize, mutationOperator);
     // HillClimber hillClimber(chromosomeSize, 1);
-    EvolutionInterface evolutionInterface(&elitist, &jump, window, renderer);
+    EvolutionInterface evolutionInterface(&elitist, &knapSack, window, renderer);
 
     evolutionLoop(&evolutionInterface);
 

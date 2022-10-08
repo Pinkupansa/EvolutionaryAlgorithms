@@ -23,5 +23,10 @@
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
   "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp"
 }
 ]
