@@ -35,3 +35,14 @@ target_link_libraries(${PROJECT_NAME} SDL2::TTF)
 # Add SDL2_gfx library
 find_package(SDL2_gfx REQUIRED)
 target_link_libraries(${PROJECT_NAME} SDL2::GFX)
+
+#boost graph
+set(Boost_USE_STATIC_LIBS OFF) 
+set(Boost_USE_MULTITHREADED ON)  
+set(Boost_USE_STATIC_RUNTIME OFF) 
+find_package(Boost 1.45.0 COMPONENTS graph) 
+
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+    target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+endif()

@@ -10,7 +10,7 @@ void copy(int *array, int *target, int size)
     }
 }
 
-ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator* mutationOperator)
+ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator* mutationOperator, Initializer* initializer)
 {
     this->populationSize = populationSize;
     this->offspringSize = offspringSize;
@@ -19,6 +19,7 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
     this->offspring = new int *[offspringSize];
     this->populationFitnesses = new double[populationSize];
     this->mutationOperator = mutationOperator;
+    this->initializer = initializer;
 
     for (int i = 0; i < populationSize; i++)
     {
@@ -45,13 +46,7 @@ ElitistEA::~ElitistEA()
 
 void ElitistEA::initialize()
 {
-    for (int i = 0; i < populationSize; i++)
-    {
-        for (int j = 0; j < chromosomeSize; j++)
-        {
-            population[i][j] = rand() % 2;
-        }
-    }
+    initializer->initialize(population, populationSize, chromosomeSize);
 }
 
 void ElitistEA::reproduce(double *newPopulationFitnesses)

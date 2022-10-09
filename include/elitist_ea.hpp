@@ -2,9 +2,10 @@
 #define ELITIST_EA_HPP
 #include "evolutionary_algorithm.hpp"
 #include "mutation_operator.hpp"
+#include "initializer.hpp"
 class ElitistEA : public EvolutionaryAlgorithm{
     public:
-        ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator* mutationOperator);
+        ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator* mutationOperator, Initializer* initializer);
         ~ElitistEA();
         void reproduce(double* populationFitnesses);
         void mutate();
@@ -21,6 +22,7 @@ class ElitistEA : public EvolutionaryAlgorithm{
         int offspringSize;
         int chromosomeSize;
         MutationOperator* mutationOperator;
+        Initializer* initializer;
         int** population;
         int** offspring;
         double* populationFitnesses;
