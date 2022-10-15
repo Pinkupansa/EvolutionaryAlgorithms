@@ -13,6 +13,9 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     this->populationFitnesses = new double[algorithm->getPopulationSize()];
     this->offspringFitnesses = new double[algorithm->getPopulationSize()];
 
+    this->bestIndividualIndex = 0;
+    this->bestFitness = 0;
+
     TTF_Init();
     this->font = TTF_OpenFont("arial.ttf", 24);
 
@@ -71,6 +74,7 @@ void EvolutionInterface::calculatePopulationFitnesses()
         {
             bestFitness = populationFitnesses[i];
             bestIndividualIndex = i;
+           
         }
     }
 }

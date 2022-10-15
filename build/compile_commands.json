@@ -1,27 +1,52 @@
 [
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++  -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp"
 }
 ]
