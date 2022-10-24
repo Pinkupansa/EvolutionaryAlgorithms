@@ -53,7 +53,7 @@ int main(int argc, char **argv)
     SDL_Window *window = createWindow(1000, 1000, "Genetic Algorithms");
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
-    int chromosomeSize = 20;
+    int chromosomeSize = 25;
 
     srand(1);
 
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
     //Jump jump(chromosomeSize, 10);
     ExchangeMutation mutationOperator;
     UniformPermutationInitializer initializer;
-    ElitistEA elitist(20, 20, chromosomeSize, &mutationOperator, &initializer);
+    ElitistEA elitist(50, 50, chromosomeSize, &mutationOperator, &initializer);
     // HillClimber hillClimber(chromosomeSize, 1);
     EvolutionInterface evolutionInterface(&elitist, &ts, window, renderer);
 
