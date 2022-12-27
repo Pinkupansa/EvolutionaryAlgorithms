@@ -1,7 +1,8 @@
 #include "elitist_ea.hpp"
 #include <algorithm>
 #include <iostream>
-#include "k_tournament_monoparent_selection.hpp"
+#include "k_tournament_parent_selection.hpp"
+#include "uniform_crossover.hpp"
 #include <vector>
 void copy(int *array, int *target, int size)
 {
@@ -32,7 +33,8 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
         this->offspring[i] = new int[chromosomeSize];
     }
 
-    this->parentSelectionOperator = new KTournamentMonoParentSelection(5);
+    this->parentSelectionOperator = new KTournamentParentSelection(50, 0.2);
+    this->crossoverOperator = new UniformCrossover();
 }
 
 ElitistEA::~ElitistEA()
@@ -68,7 +70,15 @@ void ElitistEA::reproduce(double *newPopulationFitnesses)
 
     for (int i = 0; i < offspringSize; i++)
     {
-        copy(population[parentSelections[i]->getParentsIndices()[0]], offspring[i], chromosomeSize);
+        if(parentSelections[i]->getNumberOfParents() < 2)
+        {
+            copy(population[parentSelections[i]->getParentsIndices()[0]], offspring[i], chromosomeSize);
+        }
+        else
+        {
+            crossoverOperator->crossover(parentSelections[i], chromosomeSize, population, offspring[i]);
+        }
+        
     }
 
     for (int i = 0; i < offspringSize; i++)

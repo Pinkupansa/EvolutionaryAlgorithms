@@ -46,19 +46,13 @@ void EvolutionInterface::step()
 
     if (currentGeneration % 1000 == 0)
     {
-        // Write generation number on screen
-        /*SDL_Color color = {255, 255, 255};
-        char generationText[100];
-        sprintf(generationText, "Generation: %d", currentGeneration);
-        SDL_Surface *surface = TTF_RenderText_Solid(font, generationText, color);
-        SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
-        SDL_Rect rect = {0, 0, 1000, 100};
-        SDL_RenderCopy(renderer, texture, NULL, &rect);
-        SDL_RenderPresent(renderer);
-        SDL_FreeSurface(surface);
-        SDL_DestroyTexture(texture);*/
 
         problem->visualize(getBestIndividual(), window, renderer);
+        
+    }
+    if(currentGeneration % 100 == 0)
+    {
+        visualizer.refresh(bestFitness);
     }
 }
 

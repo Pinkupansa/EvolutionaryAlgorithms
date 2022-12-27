@@ -4,6 +4,7 @@
 #include "mutation_operator.hpp"
 #include "initializer.hpp"
 #include "parent_selection_operator.hpp"
+#include "crossover_operator.hpp"
 class ElitistEA : public EvolutionaryAlgorithm{
     public:
         ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator* mutationOperator, Initializer* initializer);
@@ -25,6 +26,7 @@ class ElitistEA : public EvolutionaryAlgorithm{
         MutationOperator* mutationOperator;
         Initializer* initializer;
         ParentSelectionOperator* parentSelectionOperator;
+        CrossoverOperator* crossoverOperator;
         int** population;
         int** offspring;
         double* populationFitnesses;

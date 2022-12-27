@@ -83,15 +83,15 @@ void ts_test(SDL_Window *window, SDL_Renderer *renderer){
 
 void onemax_test(SDL_Window *window, SDL_Renderer *renderer)
 {
-    int chromosomeSize = 100;
+    int chromosomeSize = 1000;
 
     srand(1);
 
     OneMax oneMax(chromosomeSize);
     //Jump jump(chromosomeSize, 10);
-    StandardBitMutation mutationOperator(0.05);
+    StandardBitMutation mutationOperator(0.02);
     UniformPseudoBooleanInitializer initializer;
-    ElitistEA elitist(100, 100, chromosomeSize, &mutationOperator, &initializer);
+    ElitistEA elitist(1000, 500, chromosomeSize, &mutationOperator, &initializer);
     // HillClimber hillClimber(chromosomeSize, 1);
     EvolutionInterface evolutionInterface(&elitist, &oneMax, window, renderer);
 
