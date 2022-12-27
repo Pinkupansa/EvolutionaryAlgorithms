@@ -7,6 +7,8 @@
 #include "standard_bit_mutation.hpp"
 #include "uniform_pseudo_boolean_initializer.hpp"
 #include "exchange_mutation.hpp"
+#include "mutation_chain.hpp"
+#include "partial_shuffle.hpp"
 #include "uniform_permutation_initializer.hpp"
 #include "travelling_salesman.hpp"
 // Function that creates a fully operational SDL2 window
@@ -34,7 +36,7 @@ SDL_Window *createWindow(int width, int height, const char *title)
 void evolutionLoop(EvolutionInterface *evolutionInterface)
 {
     SDL_Event ev;
-
+    
     while (true)
     {
         evolutionInterface->step();
@@ -47,13 +49,8 @@ void evolutionLoop(EvolutionInterface *evolutionInterface)
         }
     }
 }
-int main(int argc, char **argv)
-{
-    // Create a SDL window
-    SDL_Window *window = createWindow(1000, 1000, "Genetic Algorithms");
-    SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-
-    int chromosomeSize = 25;
+void ts_test(SDL_Window *window, SDL_Renderer *renderer){
+    int chromosomeSize = 100;
 
     srand(1);
 
@@ -69,14 +66,47 @@ int main(int argc, char **argv)
     TravellingSalesman ts(chromosomeSize, cities);
 
     //Jump jump(chromosomeSize, 10);
-    ExchangeMutation mutationOperator;
+    ExchangeMutation mutationOperator1;
+    PartialShuffle mutationOperator2;
+    MutationOperator *mutationOperators[2] = {&mutationOperator1, &mutationOperator2};
+    double probabilities[2] = {1, 1};
+    MutationChain mutationOperator(mutationOperators, probabilities, 2);
+    
     UniformPermutationInitializer initializer;
-    ElitistEA elitist(50, 50, chromosomeSize, &mutationOperator, &initializer);
+    ElitistEA elitist(100, 100, chromosomeSize, &mutationOperator, &initializer);
     // HillClimber hillClimber(chromosomeSize, 1);
     EvolutionInterface evolutionInterface(&elitist, &ts, window, renderer);
 
     evolutionLoop(&evolutionInterface);
 
+}
+
+void onemax_test(SDL_Window *window, SDL_Renderer *renderer)
+{
+    int chromosomeSize = 100;
+
+    srand(1);
+
+    OneMax oneMax(chromosomeSize);
+    //Jump jump(chromosomeSize, 10);
+    StandardBitMutation mutationOperator(0.05);
+    UniformPseudoBooleanInitializer initializer;
+    ElitistEA elitist(100, 100, chromosomeSize, &mutationOperator, &initializer);
+    // HillClimber hillClimber(chromosomeSize, 1);
+    EvolutionInterface evolutionInterface(&elitist, &oneMax, window, renderer);
+
+    evolutionLoop(&evolutionInterface);
+}
+
+
+int main(int argc, char **argv)
+{
+    // Create a SDL window
+    SDL_Window *window = createWindow(1000, 1000, "Genetic Algorithms");
+    SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+
+    onemax_test(window, renderer);
+    
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
