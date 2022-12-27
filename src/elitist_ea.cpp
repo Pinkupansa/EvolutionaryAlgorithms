@@ -1,7 +1,9 @@
 #include "elitist_ea.hpp"
 #include <algorithm>
 #include <iostream>
-
+#include "k_tournament_parent_selection.hpp"
+#include "uniform_crossover.hpp"
+#include <vector>
 void copy(int *array, int *target, int size)
 {
     for (int i = 0; i < size; i++)
@@ -30,6 +32,9 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
     {
         this->offspring[i] = new int[chromosomeSize];
     }
+
+    this->parentSelectionOperator = new KTournamentParentSelection(50, 0.2);
+    this->crossoverOperator = new UniformCrossover();
 }
 
 ElitistEA::~ElitistEA()
@@ -59,20 +64,28 @@ void ElitistEA::reproduce(double *newPopulationFitnesses)
     int k = 5;
 
     // k tournament selection
+    std::vector<ParentSelection*> parentSelections;
+    
+    parentSelectionOperator->select(populationFitnesses, population, populationSize, offspringSize, &parentSelections);
 
     for (int i = 0; i < offspringSize; i++)
     {
-        int best = rand() % populationSize;
-        for (int j = 0; j < k; j++)
+        if(parentSelections[i]->getNumberOfParents() < 2)
         {
-            int candidate = rand() % populationSize;
-            if (newPopulationFitnesses[candidate] > newPopulationFitnesses[best])
-            {
-                best = candidate;
-            }
+            copy(population[parentSelections[i]->getParentsIndices()[0]], offspring[i], chromosomeSize);
         }
-        copy(population[best], offspring[i], chromosomeSize);
+        else
+        {
+            crossoverOperator->crossover(parentSelections[i], chromosomeSize, population, offspring[i]);
+        }
+        
     }
+
+    for (int i = 0; i < offspringSize; i++)
+    {
+        delete parentSelections[i];
+    }
+    
 }
 
 void ElitistEA::mutate()
@@ -96,11 +109,10 @@ void ElitistEA::select(double *offspringFitnesses)
     {
         return a.first < b.first;
     };
-
+    //sorts only the worst offspringSize individuals the population in ascending order of fitness 
     std::partial_sort(popFitnessWithIndex, popFitnessWithIndex + offspringSize, popFitnessWithIndex + populationSize, comparisonFunction);
-    // print this to see what is happening
 
-    std::pair<double, int> looserBracketWithIndex[2 * offspringSize];
+    std::pair<double, int> looserBracketWithIndex[2 * offspringSize]; //mixed bad population and offspring
 
     for (int i = 0; i < offspringSize; i++)
     {
@@ -114,8 +126,11 @@ void ElitistEA::select(double *offspringFitnesses)
         looserBracketWithIndex[i] = std::make_pair(offspringFitnesses[i - offspringSize], i - offspringSize + populationSize);
     }
     std::cout << std::endl;
+
+    //sorts only the worst offspringSize individuals the population in ascending order of fitness
     std::partial_sort(looserBracketWithIndex, looserBracketWithIndex + offspringSize, looserBracketWithIndex + 2 * offspringSize, comparisonFunction);
 
+    //the first half of the looserBracketWithIndex array contains individuals that will be replaced by the second half of the array
     for (int i = 0; i < offspringSize; i++)
     {
         int replacedIndex = looserBracketWithIndex[i].second;
@@ -134,6 +149,7 @@ void ElitistEA::select(double *offspringFitnesses)
             }
         }
     }
+    
 }
 
 int **ElitistEA::getCurrentPopulation()

@@ -4,6 +4,7 @@
 #include "evolutionary_algorithm.hpp"
 #include "problem_wrapper.hpp"
 #include <SDL2/SDL_ttf.h>
+#include "ga_visualizer.hpp"
 class EvolutionInterface
 {
 
@@ -19,6 +20,8 @@ private:
     SDL_Renderer *renderer;
 
     EvolutionaryAlgorithm *algorithm;
+
+    GAVisualizer visualizer;
 
     ProblemWrapper *problem;
     double *populationFitnesses;
