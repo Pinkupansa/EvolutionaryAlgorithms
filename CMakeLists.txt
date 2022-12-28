@@ -48,3 +48,19 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
     target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
 endif()
+
+#compile a library called EAL
+add_library(EAL STATIC ${SOURCES})
+
+#remove main.cpp
+set_target_properties(EAL PROPERTIES LINKER_LANGUAGE CXX)
+
+target_include_directories(EAL PUBLIC include)
+target_link_libraries(EAL matplot)
+target_link_libraries(EAL SDL2::Main)
+target_link_libraries(EAL SDL2::TTF)
+target_link_libraries(EAL SDL2::GFX)
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+    target_link_libraries(EAL ${Boost_LIBRARIES})
+endif()
