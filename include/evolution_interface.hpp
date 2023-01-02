@@ -32,9 +32,10 @@ private:
 
     int currentGeneration;
 
-    void calculatePopulationFitnesses();
+    void calculateInitialPopulationFitnesses();
     void calculateOffspringFitnesses();
     void printBestIndividual();
+    void recalculatePopulationFitnesses(std::vector<int> &removedPopulation, std::vector<int> &addedOffspring);
 
     TTF_Font *font;
 };

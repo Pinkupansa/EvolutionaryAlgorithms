@@ -12,7 +12,7 @@ void copy(int *array, int *target, int size)
     }
 }
 
-ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator* mutationOperator, Initializer* initializer)
+ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer)
 {
     this->populationSize = populationSize;
     this->offspringSize = offspringSize;
@@ -33,7 +33,7 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
         this->offspring[i] = new int[chromosomeSize];
     }
 
-    this->parentSelectionOperator = new KTournamentParentSelection(50, 0.2);
+    this->parentSelectionOperator = new KTournamentParentSelection(50, 0.75);
     this->crossoverOperator = new UniformCrossover();
 }
 
@@ -64,13 +64,13 @@ void ElitistEA::reproduce(double *newPopulationFitnesses)
     int k = 5;
 
     // k tournament selection
-    std::vector<ParentSelection*> parentSelections;
-    
+    std::vector<ParentSelection *> parentSelections;
+
     parentSelectionOperator->select(populationFitnesses, population, populationSize, offspringSize, &parentSelections);
 
     for (int i = 0; i < offspringSize; i++)
     {
-        if(parentSelections[i]->getNumberOfParents() < 2)
+        if (parentSelections[i]->getNumberOfParents() < 2)
         {
             copy(population[parentSelections[i]->getParentsIndices()[0]], offspring[i], chromosomeSize);
         }
@@ -78,14 +78,12 @@ void ElitistEA::reproduce(double *newPopulationFitnesses)
         {
             crossoverOperator->crossover(parentSelections[i], chromosomeSize, population, offspring[i]);
         }
-        
     }
 
     for (int i = 0; i < offspringSize; i++)
     {
         delete parentSelections[i];
     }
-    
 }
 
 void ElitistEA::mutate()
@@ -96,7 +94,7 @@ void ElitistEA::mutate()
     }
 }
 
-void ElitistEA::select(double *offspringFitnesses)
+void ElitistEA::select(double *offspringFitnesses, std::vector<int> removedPopulation, std::vector<int> addedOffspring)
 {
 
     std::pair<double, int> popFitnessWithIndex[populationSize];
@@ -109,10 +107,10 @@ void ElitistEA::select(double *offspringFitnesses)
     {
         return a.first < b.first;
     };
-    //sorts only the worst offspringSize individuals the population in ascending order of fitness 
+    // sorts only the worst offspringSize individuals the population in ascending order of fitness
     std::partial_sort(popFitnessWithIndex, popFitnessWithIndex + offspringSize, popFitnessWithIndex + populationSize, comparisonFunction);
 
-    std::pair<double, int> looserBracketWithIndex[2 * offspringSize]; //mixed bad population and offspring
+    std::pair<double, int> looserBracketWithIndex[2 * offspringSize]; // mixed bad population and offspring
 
     for (int i = 0; i < offspringSize; i++)
     {
@@ -127,16 +125,17 @@ void ElitistEA::select(double *offspringFitnesses)
     }
     std::cout << std::endl;
 
-    //sorts only the worst offspringSize individuals the population in ascending order of fitness
+    // sorts only the worst offspringSize individuals the population in ascending order of fitness
     std::partial_sort(looserBracketWithIndex, looserBracketWithIndex + offspringSize, looserBracketWithIndex + 2 * offspringSize, comparisonFunction);
 
-    //the first half of the looserBracketWithIndex array contains individuals that will be replaced by the second half of the array
+    // the first half of the looserBracketWithIndex array contains individuals that will be replaced by the second half of the array
     for (int i = 0; i < offspringSize; i++)
     {
         int replacedIndex = looserBracketWithIndex[i].second;
         int replacingIndex = looserBracketWithIndex[i + offspringSize].second;
         if (replacedIndex < populationSize)
         {
+            removedPopulation.push_back(replacedIndex);
             if (replacingIndex < populationSize)
             {
                 copy(population[replacingIndex], population[replacedIndex], chromosomeSize);
@@ -144,12 +143,12 @@ void ElitistEA::select(double *offspringFitnesses)
             }
             else
             {
+                addedOffspring.push_back(replacingIndex - populationSize);
                 copy(offspring[replacingIndex - populationSize], population[replacedIndex], chromosomeSize);
                 populationFitnesses[replacedIndex] = offspringFitnesses[replacingIndex - populationSize];
             }
         }
     }
-    
 }
 
 int **ElitistEA::getCurrentPopulation()

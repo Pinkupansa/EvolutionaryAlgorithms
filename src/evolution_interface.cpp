@@ -22,7 +22,7 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     algorithm->initialize();
     srand(time(NULL));
     std::cout << "EA initialized" << std::endl;
-    calculatePopulationFitnesses();
+    calculateInitialPopulationFitnesses();
 }
 
 EvolutionInterface::~EvolutionInterface()
@@ -31,6 +31,18 @@ EvolutionInterface::~EvolutionInterface()
     delete[] populationFitnesses;
     delete[] offspringFitnesses;
 }
+void EvolutionInterface::recalculatePopulationFitnesses(std::vector<int> &removedPopulation, std::vector<int> &addedOffspring)
+{
+    for (int i = 0; i < removedPopulation.size(); i++)
+    {
+        populationFitnesses[removedPopulation[i]] = offspringFitnesses[addedOffspring[i]];
+        if (populationFitnesses[removedPopulation[i]] > bestFitness)
+        {
+            bestFitness = populationFitnesses[removedPopulation[i]];
+            bestIndividualIndex = removedPopulation[i];
+        }
+    }
+}
 
 void EvolutionInterface::step()
 {
@@ -38,8 +50,11 @@ void EvolutionInterface::step()
     algorithm->reproduce(populationFitnesses);
     algorithm->mutate();
     calculateOffspringFitnesses();
-    algorithm->select(offspringFitnesses);
-    calculatePopulationFitnesses();
+    std::vector<int> removedPopulation;
+    std::vector<int> addedOffspring;
+    algorithm->select(offspringFitnesses, removedPopulation, addedOffspring);
+
+    // calculateInitialPopulationFitnesses();
 
     printBestIndividual();
     currentGeneration++;
@@ -48,15 +63,12 @@ void EvolutionInterface::step()
     {
 
         problem->visualize(getBestIndividual(), window, renderer);
-        
     }
-    if(currentGeneration % 100 == 0)
-    {
-        visualizer.refresh(bestFitness);
-    }
+
+    visualizer.refresh(bestFitness);
 }
 
-void EvolutionInterface::calculatePopulationFitnesses()
+void EvolutionInterface::calculateInitialPopulationFitnesses()
 {
     bestFitness = 0;
     int **individuals = algorithm->getCurrentPopulation();
@@ -68,7 +80,6 @@ void EvolutionInterface::calculatePopulationFitnesses()
         {
             bestFitness = populationFitnesses[i];
             bestIndividualIndex = i;
-           
         }
     }
 }

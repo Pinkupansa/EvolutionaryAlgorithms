@@ -36,7 +36,7 @@ SDL_Window *createWindow(int width, int height, const char *title)
 void evolutionLoop(EvolutionInterface *evolutionInterface)
 {
     SDL_Event ev;
-    
+
     while (true)
     {
         evolutionInterface->step();
@@ -49,12 +49,13 @@ void evolutionLoop(EvolutionInterface *evolutionInterface)
         }
     }
 }
-void ts_test(SDL_Window *window, SDL_Renderer *renderer){
+void ts_test(SDL_Window *window, SDL_Renderer *renderer)
+{
     int chromosomeSize = 100;
 
     srand(1);
 
-    //create chromosomeSize random cities
+    // create chromosomeSize random cities
     int **cities = new int *[chromosomeSize];
     for (int i = 0; i < chromosomeSize; i++)
     {
@@ -65,20 +66,19 @@ void ts_test(SDL_Window *window, SDL_Renderer *renderer){
 
     TravellingSalesman ts(chromosomeSize, cities);
 
-    //Jump jump(chromosomeSize, 10);
+    // Jump jump(chromosomeSize, 10);
     ExchangeMutation mutationOperator1;
     PartialShuffle mutationOperator2;
     MutationOperator *mutationOperators[2] = {&mutationOperator1, &mutationOperator2};
     double probabilities[2] = {1, 1};
     MutationChain mutationOperator(mutationOperators, probabilities, 2);
-    
+
     UniformPermutationInitializer initializer;
     ElitistEA elitist(100, 100, chromosomeSize, &mutationOperator, &initializer);
     // HillClimber hillClimber(chromosomeSize, 1);
     EvolutionInterface evolutionInterface(&elitist, &ts, window, renderer);
 
     evolutionLoop(&evolutionInterface);
-
 }
 
 void onemax_test(SDL_Window *window, SDL_Renderer *renderer)
@@ -88,7 +88,7 @@ void onemax_test(SDL_Window *window, SDL_Renderer *renderer)
     srand(1);
 
     OneMax oneMax(chromosomeSize);
-    //Jump jump(chromosomeSize, 10);
+    // Jump jump(chromosomeSize, 10);
     StandardBitMutation mutationOperator(0.02);
     UniformPseudoBooleanInitializer initializer;
     ElitistEA elitist(1000, 500, chromosomeSize, &mutationOperator, &initializer);
@@ -98,7 +98,6 @@ void onemax_test(SDL_Window *window, SDL_Renderer *renderer)
     evolutionLoop(&evolutionInterface);
 }
 
-
 int main(int argc, char **argv)
 {
     // Create a SDL window
@@ -106,7 +105,7 @@ int main(int argc, char **argv)
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
     onemax_test(window, renderer);
-    
+
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
