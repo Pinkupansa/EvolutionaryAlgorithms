@@ -14,7 +14,9 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     this->offspringFitnesses = new double[algorithm->getPopulationSize()];
 
     this->bestIndividualIndex = 0;
+    this->worstIndividualIndex = 0;
     this->bestFitness = 0;
+    this->worstFitness = 10000000;
 
     TTF_Init();
     this->font = TTF_OpenFont("arial.ttf", 24);
@@ -25,7 +27,7 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     calculateInitialPopulationFitnesses();
     printBestIndividual();
     problem->visualize(getBestIndividual(), window, renderer);
-    visualizer.refresh(bestFitness);
+    visualizer.refresh(bestFitness, worstFitness);
     this->graphRefreshRate = graphRefreshRate;
 }
 
@@ -37,6 +39,7 @@ EvolutionInterface::~EvolutionInterface()
 }
 void EvolutionInterface::recalculatePopulationFitnesses(std::vector<int> &removedPopulation, std::vector<int> &addedOffspring)
 {
+
     for (int i = 0; i < removedPopulation.size(); i++)
     {
         populationFitnesses[removedPopulation[i]] = offspringFitnesses[addedOffspring[i]];
@@ -44,6 +47,15 @@ void EvolutionInterface::recalculatePopulationFitnesses(std::vector<int> &remove
         {
             bestFitness = populationFitnesses[removedPopulation[i]];
             bestIndividualIndex = removedPopulation[i];
+        }
+    }
+    worstFitness = 10000000;
+    for (int i = 0; i < algorithm->getPopulationSize(); i++)
+    {
+        if (populationFitnesses[i] < worstFitness)
+        {
+            worstFitness = populationFitnesses[i];
+            worstIndividualIndex = i;
         }
     }
 }
@@ -76,13 +88,14 @@ void EvolutionInterface::step()
     if (currentGeneration % graphRefreshRate == 0)
     {
         problem->visualize(getBestIndividual(), window, renderer);
-        visualizer.refresh(bestFitness);
+        visualizer.refresh(bestFitness, worstFitness);
     }
 }
 
 void EvolutionInterface::calculateInitialPopulationFitnesses()
 {
     bestFitness = 0;
+    worstFitness = 1000000000;
     int **individuals = algorithm->getCurrentPopulation();
     for (int i = 0; i < algorithm->getPopulationSize(); i++)
     {
@@ -92,6 +105,11 @@ void EvolutionInterface::calculateInitialPopulationFitnesses()
         {
             bestFitness = populationFitnesses[i];
             bestIndividualIndex = i;
+        }
+        if (populationFitnesses[i] < worstFitness)
+        {
+            worstFitness = populationFitnesses[i];
+            worstIndividualIndex = i;
         }
     }
 }

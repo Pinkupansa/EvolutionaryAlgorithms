@@ -8,8 +8,10 @@ class GAVisualizer
 {
 public:
     GAVisualizer();
-    void refresh(double newBestFitness);
+    void refresh(double newBestFitness, double newWorstFitness);
+
 private:
     std::vector<double> bestFitnesses;
+    std::vector<double> worstFitnesses;
 };
 #endif
