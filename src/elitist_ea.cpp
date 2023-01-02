@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <iostream>
 #include "k_tournament_parent_selection.hpp"
+#include "fitness_proportional_parent_selection.hpp"
 #include "uniform_crossover.hpp"
 #include <vector>
 void copy(int *array, int *target, int size)
@@ -33,7 +34,7 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
         this->offspring[i] = new int[chromosomeSize];
     }
 
-    this->parentSelectionOperator = new KTournamentParentSelection(50, 0.75);
+    this->parentSelectionOperator = new FitnessProportionalParentSelection(0.75);
     this->crossoverOperator = new UniformCrossover();
 }
 
