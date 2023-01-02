@@ -36,10 +36,8 @@ SDL_Window *createWindow(int width, int height, const char *title)
 void evolutionLoop(EvolutionInterface *evolutionInterface)
 {
     SDL_Event ev;
-
     while (true)
     {
-        evolutionInterface->step();
         while (SDL_PollEvent(&ev))
         {
             if (ev.type == SDL_QUIT)
@@ -47,6 +45,8 @@ void evolutionLoop(EvolutionInterface *evolutionInterface)
                 return;
             }
         }
+        evolutionInterface->step();
+        SDL_Delay(0);
     }
 }
 void ts_test(SDL_Window *window, SDL_Renderer *renderer)
@@ -76,7 +76,7 @@ void ts_test(SDL_Window *window, SDL_Renderer *renderer)
     UniformPermutationInitializer initializer;
     ElitistEA elitist(100, 100, chromosomeSize, &mutationOperator, &initializer);
     // HillClimber hillClimber(chromosomeSize, 1);
-    EvolutionInterface evolutionInterface(&elitist, &ts, window, renderer);
+    EvolutionInterface evolutionInterface(&elitist, &ts, window, renderer, 100);
 
     evolutionLoop(&evolutionInterface);
 }
@@ -93,7 +93,7 @@ void onemax_test(SDL_Window *window, SDL_Renderer *renderer)
     UniformPseudoBooleanInitializer initializer;
     ElitistEA elitist(1000, 500, chromosomeSize, &mutationOperator, &initializer);
     // HillClimber hillClimber(chromosomeSize, 1);
-    EvolutionInterface evolutionInterface(&elitist, &oneMax, window, renderer);
+    EvolutionInterface evolutionInterface(&elitist, &oneMax, window, renderer, 100);
 
     evolutionLoop(&evolutionInterface);
 }

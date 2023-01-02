@@ -94,7 +94,7 @@ void ElitistEA::mutate()
     }
 }
 
-void ElitistEA::select(double *offspringFitnesses, std::vector<int> removedPopulation, std::vector<int> addedOffspring)
+void ElitistEA::select(double *offspringFitnesses, std::vector<int> *removedPopulation, std::vector<int> *addedOffspring)
 {
 
     std::pair<double, int> popFitnessWithIndex[populationSize];
@@ -110,43 +110,29 @@ void ElitistEA::select(double *offspringFitnesses, std::vector<int> removedPopul
     // sorts only the worst offspringSize individuals the population in ascending order of fitness
     std::partial_sort(popFitnessWithIndex, popFitnessWithIndex + offspringSize, popFitnessWithIndex + populationSize, comparisonFunction);
 
-    std::pair<double, int> looserBracketWithIndex[2 * offspringSize]; // mixed bad population and offspring
-
+    std::pair<double, int> offFitnessWithIndex[offspringSize];
     for (int i = 0; i < offspringSize; i++)
     {
-        // Worst individuals of the population
-        looserBracketWithIndex[i] = popFitnessWithIndex[i];
+        offFitnessWithIndex[i] = std::make_pair(offspringFitnesses[i], i);
     }
+    std::sort(offFitnessWithIndex, offFitnessWithIndex + offspringSize, comparisonFunction);
 
-    for (int i = offspringSize; i < 2 * offspringSize; i++)
+    int i = 0;
+    int j = 0;
+
+    while (i < offspringSize && j < offspringSize)
     {
-        // Worst individuals of the offspring
-        looserBracketWithIndex[i] = std::make_pair(offspringFitnesses[i - offspringSize], i - offspringSize + populationSize);
-    }
-    std::cout << std::endl;
-
-    // sorts only the worst offspringSize individuals the population in ascending order of fitness
-    std::partial_sort(looserBracketWithIndex, looserBracketWithIndex + offspringSize, looserBracketWithIndex + 2 * offspringSize, comparisonFunction);
-
-    // the first half of the looserBracketWithIndex array contains individuals that will be replaced by the second half of the array
-    for (int i = 0; i < offspringSize; i++)
-    {
-        int replacedIndex = looserBracketWithIndex[i].second;
-        int replacingIndex = looserBracketWithIndex[i + offspringSize].second;
-        if (replacedIndex < populationSize)
+        if (popFitnessWithIndex[i].first < offFitnessWithIndex[j].first)
         {
-            removedPopulation.push_back(replacedIndex);
-            if (replacingIndex < populationSize)
-            {
-                copy(population[replacingIndex], population[replacedIndex], chromosomeSize);
-                populationFitnesses[replacedIndex] = populationFitnesses[replacingIndex];
-            }
-            else
-            {
-                addedOffspring.push_back(replacingIndex - populationSize);
-                copy(offspring[replacingIndex - populationSize], population[replacedIndex], chromosomeSize);
-                populationFitnesses[replacedIndex] = offspringFitnesses[replacingIndex - populationSize];
-            }
+            removedPopulation->push_back(popFitnessWithIndex[j].second);
+            addedOffspring->push_back(offFitnessWithIndex[i].second);
+            copy(offspring[offFitnessWithIndex[j].second], population[popFitnessWithIndex[i].second], chromosomeSize);
+            i++;
+            j++;
+        }
+        else
+        {
+            j++;
         }
     }
 }

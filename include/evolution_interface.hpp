@@ -9,7 +9,7 @@ class EvolutionInterface
 {
 
 public:
-    EvolutionInterface(EvolutionaryAlgorithm *algorithm, ProblemWrapper *function, SDL_Window *window, SDL_Renderer *renderer);
+    EvolutionInterface(EvolutionaryAlgorithm *algorithm, ProblemWrapper *function, SDL_Window *window, SDL_Renderer *renderer, int graphRefreshRate);
     ~EvolutionInterface();
     void step();
     int *getBestIndividual();
@@ -36,7 +36,7 @@ private:
     void calculateOffspringFitnesses();
     void printBestIndividual();
     void recalculatePopulationFitnesses(std::vector<int> &removedPopulation, std::vector<int> &addedOffspring);
-
+    int graphRefreshRate;
     TTF_Font *font;
 };
 

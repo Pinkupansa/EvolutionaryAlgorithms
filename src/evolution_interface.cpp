@@ -2,7 +2,7 @@
 #include <random>
 #include <SDL2_framerate.h>
 
-EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, ProblemWrapper *problem, SDL_Window *window, SDL_Renderer *renderer)
+EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, ProblemWrapper *problem, SDL_Window *window, SDL_Renderer *renderer, int graphRefreshRate)
 {
     this->algorithm = algorithm;
     this->problem = problem;
@@ -23,6 +23,7 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     srand(time(NULL));
     std::cout << "EA initialized" << std::endl;
     calculateInitialPopulationFitnesses();
+    this->graphRefreshRate = graphRefreshRate;
 }
 
 EvolutionInterface::~EvolutionInterface()
@@ -52,7 +53,19 @@ void EvolutionInterface::step()
     calculateOffspringFitnesses();
     std::vector<int> removedPopulation;
     std::vector<int> addedOffspring;
-    algorithm->select(offspringFitnesses, removedPopulation, addedOffspring);
+    algorithm->select(offspringFitnesses, &removedPopulation, &addedOffspring);
+    // print removedPopulation
+    /*for (int i = 0; i < removedPopulation.size(); i++)
+    {
+        std::cout << removedPopulation[i] << " ";
+    }
+    std::cout << std::endl;
+    // print addedOffspring
+    for (int i = 0; i < addedOffspring.size(); i++)
+    {
+        std::cout << addedOffspring[i] << " ";
+    }*/
+    recalculatePopulationFitnesses(removedPopulation, addedOffspring);
 
     // calculateInitialPopulationFitnesses();
 
@@ -64,8 +77,10 @@ void EvolutionInterface::step()
 
         problem->visualize(getBestIndividual(), window, renderer);
     }
-
-    visualizer.refresh(bestFitness);
+    if (currentGeneration % graphRefreshRate == 0)
+    {
+        visualizer.refresh(bestFitness);
+    }
 }
 
 void EvolutionInterface::calculateInitialPopulationFitnesses()

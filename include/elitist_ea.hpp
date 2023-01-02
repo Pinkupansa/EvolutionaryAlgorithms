@@ -12,7 +12,7 @@ public:
     ~ElitistEA();
     void reproduce(double *populationFitnesses);
     void mutate();
-    void select(double *offspringFitnesses, std::vector<int> removedPopulation, std::vector<int> addedOffspring);
+    void select(double *offspringFitnesses, std::vector<int> *removedPopulation, std::vector<int> *addedOffspring);
     void initialize();
     int **getCurrentPopulation();
     int **getCurrentOffspring();
