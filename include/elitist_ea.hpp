@@ -8,6 +8,7 @@
 class ElitistEA : public EvolutionaryAlgorithm
 {
 public:
+    ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer, CrossoverOperator *crossoverOperator, ParentSelectionOperator *parentSelectionOperator);
     ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer);
     ~ElitistEA();
     void reproduce(double *populationFitnesses);

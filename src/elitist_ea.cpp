@@ -15,6 +15,11 @@ void copy(int *array, int *target, int size)
 
 ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer)
 {
+    ElitistEA(populationSize, offspringSize, chromosomeSize, mutationOperator, initializer, new UniformCrossover(), new FitnessProportionalParentSelection(0.75));
+}
+
+ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer, CrossoverOperator *crossoverOperator, ParentSelectionOperator *parentSelectionOperator)
+{
     this->populationSize = populationSize;
     this->offspringSize = offspringSize;
     this->chromosomeSize = chromosomeSize;
@@ -23,6 +28,8 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
     this->populationFitnesses = new double[populationSize];
     this->mutationOperator = mutationOperator;
     this->initializer = initializer;
+    this->crossoverOperator = crossoverOperator;
+    this->parentSelectionOperator = parentSelectionOperator;
 
     for (int i = 0; i < populationSize; i++)
     {
