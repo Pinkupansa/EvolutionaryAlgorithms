@@ -28,7 +28,10 @@ private:
     double *offspringFitnesses;
 
     int bestIndividualIndex;
+    int worstIndividualIndex;
+
     double bestFitness;
+    double worstFitness;
 
     int currentGeneration;
 
