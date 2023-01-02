@@ -23,6 +23,9 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     srand(time(NULL));
     std::cout << "EA initialized" << std::endl;
     calculateInitialPopulationFitnesses();
+    printBestIndividual();
+    problem->visualize(getBestIndividual(), window, renderer);
+    visualizer.refresh(bestFitness);
     this->graphRefreshRate = graphRefreshRate;
 }
 
@@ -67,18 +70,12 @@ void EvolutionInterface::step()
     }*/
     recalculatePopulationFitnesses(removedPopulation, addedOffspring);
 
-    // calculateInitialPopulationFitnesses();
-
     printBestIndividual();
     currentGeneration++;
 
-    if (currentGeneration % 1000 == 0)
-    {
-
-        problem->visualize(getBestIndividual(), window, renderer);
-    }
     if (currentGeneration % graphRefreshRate == 0)
     {
+        problem->visualize(getBestIndividual(), window, renderer);
         visualizer.refresh(bestFitness);
     }
 }
