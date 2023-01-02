@@ -12,4 +12,5 @@ void GAVisualizer::refresh(double newBestFitness, double newWorstFitness)
     matplot::plot(bestFitnesses);
     // matplot::pause(0.001);
     worstFitnesses.push_back(newWorstFitness);
+    matplot::plot(worstFitnesses);
 }
