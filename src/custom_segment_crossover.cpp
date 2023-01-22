@@ -1,7 +1,7 @@
 #include "custom_segment_crossover.hpp"
 
 #include <random>
-
+#include <iostream>
 CustomSegmentCrossover::CustomSegmentCrossover(int *segmentSizes, int segmentCount)
 {
     this->segmentSizes = segmentSizes;

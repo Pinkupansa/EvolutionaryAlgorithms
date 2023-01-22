@@ -6,7 +6,7 @@
 class CustomSegmentCrossover : public CrossoverOperator
 {
 public:
-    CustomSegmentCrossover(int *segmentSizes);
+    CustomSegmentCrossover(int *segmentSizes, int segmentCount);
     void crossover(ParentSelection *parentSelection, int chromosomeSize, int **population, int *outOffspring);
 
 private:

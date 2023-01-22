@@ -15,7 +15,26 @@ void copy(int *array, int *target, int size)
 
 ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer)
 {
-    ElitistEA(populationSize, offspringSize, chromosomeSize, mutationOperator, initializer, new UniformCrossover(), new FitnessProportionalParentSelection(0.75));
+    this->populationSize = populationSize;
+    this->offspringSize = offspringSize;
+    this->chromosomeSize = chromosomeSize;
+    this->population = new int *[populationSize];
+    this->offspring = new int *[offspringSize];
+    this->populationFitnesses = new double[populationSize];
+    this->mutationOperator = mutationOperator;
+    this->initializer = initializer;
+    this->crossoverOperator = new UniformCrossover();
+    this->parentSelectionOperator = new FitnessProportionalParentSelection(0.75);
+
+    for (int i = 0; i < populationSize; i++)
+    {
+        this->population[i] = new int[chromosomeSize];
+    }
+
+    for (int i = 0; i < offspringSize; i++)
+    {
+        this->offspring[i] = new int[chromosomeSize];
+    }
 }
 
 ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer, CrossoverOperator *crossoverOperator, ParentSelectionOperator *parentSelectionOperator)
@@ -41,8 +60,8 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
         this->offspring[i] = new int[chromosomeSize];
     }
 
-    this->parentSelectionOperator = new FitnessProportionalParentSelection(0.75);
-    this->crossoverOperator = new UniformCrossover();
+    this->parentSelectionOperator = parentSelectionOperator;
+    this->crossoverOperator = crossoverOperator;
 }
 
 ElitistEA::~ElitistEA()

@@ -3,4 +3,5 @@
 #include "crossover_operator.hpp"
 #include "single_point_crossover.hpp"
 #include "uniform_crossover.hpp"
+#include "custom_segment_crossover.hpp"
 #endif

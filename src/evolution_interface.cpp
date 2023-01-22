@@ -9,8 +9,10 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     this->window = window;
     this->renderer = renderer;
     this->currentGeneration = 1;
-
+    std::cout << "Initializing population fitnesses" << std::endl;
     this->populationFitnesses = new double[algorithm->getPopulationSize()];
+
+    std::cout << "Initializing offspring fitnesses" << std::endl;
     this->offspringFitnesses = new double[algorithm->getPopulationSize()];
 
     this->bestIndividualIndex = 0;
@@ -21,6 +23,7 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     TTF_Init();
     this->font = TTF_OpenFont("arial.ttf", 24);
 
+    std::cout << "Initializing EA" << std::endl;
     algorithm->initialize();
     srand(time(NULL));
     std::cout << "EA initialized" << std::endl;
