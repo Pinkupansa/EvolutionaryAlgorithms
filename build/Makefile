@@ -129,12 +129,52 @@ EvolutionaryAlgorithms/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/build
 .PHONY : EvolutionaryAlgorithms/fast
 
+#=============================================================================
+# Target rules for targets named EAL
+
+# Build rule for target.
+EAL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EAL
+.PHONY : EAL
+
+# fast build rule for target.
+EAL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/build
+.PHONY : EAL/fast
+
+#=============================================================================
+# Target rules for targets named nodesoup
+
+# Build rule for target.
+nodesoup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nodesoup
+.PHONY : nodesoup
+
+# fast build rule for target.
+nodesoup/fast:
+	$(MAKE) $(MAKESILENT) -f cmake/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir/build.make cmake/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir/build
+.PHONY : nodesoup/fast
+
+#=============================================================================
+# Target rules for targets named matplot
+
+# Build rule for target.
+matplot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matplot
+.PHONY : matplot
+
+# fast build rule for target.
+matplot/fast:
+	$(MAKE) $(MAKESILENT) -f cmake/matplotplusplus/source/matplot/CMakeFiles/matplot.dir/build.make cmake/matplotplusplus/source/matplot/CMakeFiles/matplot.dir/build
+.PHONY : matplot/fast
+
 src/benchmark_functions.o: src/benchmark_functions.cpp.o
 .PHONY : src/benchmark_functions.o
 
 # target to build an object file
 src/benchmark_functions.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/benchmark_functions.cpp.o
 .PHONY : src/benchmark_functions.cpp.o
 
 src/benchmark_functions.i: src/benchmark_functions.cpp.i
@@ -143,6 +183,7 @@ src/benchmark_functions.i: src/benchmark_functions.cpp.i
 # target to preprocess a source file
 src/benchmark_functions.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/benchmark_functions.cpp.i
 .PHONY : src/benchmark_functions.cpp.i
 
 src/benchmark_functions.s: src/benchmark_functions.cpp.s
@@ -151,7 +192,35 @@ src/benchmark_functions.s: src/benchmark_functions.cpp.s
 # target to generate assembly for a file
 src/benchmark_functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/benchmark_functions.cpp.s
 .PHONY : src/benchmark_functions.cpp.s
+
+src/custom_segment_crossover.o: src/custom_segment_crossover.cpp.o
+.PHONY : src/custom_segment_crossover.o
+
+# target to build an object file
+src/custom_segment_crossover.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/custom_segment_crossover.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/custom_segment_crossover.cpp.o
+.PHONY : src/custom_segment_crossover.cpp.o
+
+src/custom_segment_crossover.i: src/custom_segment_crossover.cpp.i
+.PHONY : src/custom_segment_crossover.i
+
+# target to preprocess a source file
+src/custom_segment_crossover.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/custom_segment_crossover.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/custom_segment_crossover.cpp.i
+.PHONY : src/custom_segment_crossover.cpp.i
+
+src/custom_segment_crossover.s: src/custom_segment_crossover.cpp.s
+.PHONY : src/custom_segment_crossover.s
+
+# target to generate assembly for a file
+src/custom_segment_crossover.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/custom_segment_crossover.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/custom_segment_crossover.cpp.s
+.PHONY : src/custom_segment_crossover.cpp.s
 
 src/elitist_ea.o: src/elitist_ea.cpp.o
 .PHONY : src/elitist_ea.o
@@ -159,6 +228,7 @@ src/elitist_ea.o: src/elitist_ea.cpp.o
 # target to build an object file
 src/elitist_ea.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/elitist_ea.cpp.o
 .PHONY : src/elitist_ea.cpp.o
 
 src/elitist_ea.i: src/elitist_ea.cpp.i
@@ -167,6 +237,7 @@ src/elitist_ea.i: src/elitist_ea.cpp.i
 # target to preprocess a source file
 src/elitist_ea.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/elitist_ea.cpp.i
 .PHONY : src/elitist_ea.cpp.i
 
 src/elitist_ea.s: src/elitist_ea.cpp.s
@@ -175,6 +246,7 @@ src/elitist_ea.s: src/elitist_ea.cpp.s
 # target to generate assembly for a file
 src/elitist_ea.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/elitist_ea.cpp.s
 .PHONY : src/elitist_ea.cpp.s
 
 src/evolution_interface.o: src/evolution_interface.cpp.o
@@ -183,6 +255,7 @@ src/evolution_interface.o: src/evolution_interface.cpp.o
 # target to build an object file
 src/evolution_interface.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/evolution_interface.cpp.o
 .PHONY : src/evolution_interface.cpp.o
 
 src/evolution_interface.i: src/evolution_interface.cpp.i
@@ -191,6 +264,7 @@ src/evolution_interface.i: src/evolution_interface.cpp.i
 # target to preprocess a source file
 src/evolution_interface.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/evolution_interface.cpp.i
 .PHONY : src/evolution_interface.cpp.i
 
 src/evolution_interface.s: src/evolution_interface.cpp.s
@@ -199,6 +273,7 @@ src/evolution_interface.s: src/evolution_interface.cpp.s
 # target to generate assembly for a file
 src/evolution_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/evolution_interface.cpp.s
 .PHONY : src/evolution_interface.cpp.s
 
 src/exchange_mutation.o: src/exchange_mutation.cpp.o
@@ -207,6 +282,7 @@ src/exchange_mutation.o: src/exchange_mutation.cpp.o
 # target to build an object file
 src/exchange_mutation.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/exchange_mutation.cpp.o
 .PHONY : src/exchange_mutation.cpp.o
 
 src/exchange_mutation.i: src/exchange_mutation.cpp.i
@@ -215,6 +291,7 @@ src/exchange_mutation.i: src/exchange_mutation.cpp.i
 # target to preprocess a source file
 src/exchange_mutation.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/exchange_mutation.cpp.i
 .PHONY : src/exchange_mutation.cpp.i
 
 src/exchange_mutation.s: src/exchange_mutation.cpp.s
@@ -223,7 +300,62 @@ src/exchange_mutation.s: src/exchange_mutation.cpp.s
 # target to generate assembly for a file
 src/exchange_mutation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/exchange_mutation.cpp.s
 .PHONY : src/exchange_mutation.cpp.s
+
+src/fitness_proportional_parent_selection.o: src/fitness_proportional_parent_selection.cpp.o
+.PHONY : src/fitness_proportional_parent_selection.o
+
+# target to build an object file
+src/fitness_proportional_parent_selection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/fitness_proportional_parent_selection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/fitness_proportional_parent_selection.cpp.o
+.PHONY : src/fitness_proportional_parent_selection.cpp.o
+
+src/fitness_proportional_parent_selection.i: src/fitness_proportional_parent_selection.cpp.i
+.PHONY : src/fitness_proportional_parent_selection.i
+
+# target to preprocess a source file
+src/fitness_proportional_parent_selection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/fitness_proportional_parent_selection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/fitness_proportional_parent_selection.cpp.i
+.PHONY : src/fitness_proportional_parent_selection.cpp.i
+
+src/fitness_proportional_parent_selection.s: src/fitness_proportional_parent_selection.cpp.s
+.PHONY : src/fitness_proportional_parent_selection.s
+
+# target to generate assembly for a file
+src/fitness_proportional_parent_selection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/fitness_proportional_parent_selection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/fitness_proportional_parent_selection.cpp.s
+.PHONY : src/fitness_proportional_parent_selection.cpp.s
+
+src/ga_visualizer.o: src/ga_visualizer.cpp.o
+.PHONY : src/ga_visualizer.o
+
+# target to build an object file
+src/ga_visualizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/ga_visualizer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/ga_visualizer.cpp.o
+.PHONY : src/ga_visualizer.cpp.o
+
+src/ga_visualizer.i: src/ga_visualizer.cpp.i
+.PHONY : src/ga_visualizer.i
+
+# target to preprocess a source file
+src/ga_visualizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/ga_visualizer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/ga_visualizer.cpp.i
+.PHONY : src/ga_visualizer.cpp.i
+
+src/ga_visualizer.s: src/ga_visualizer.cpp.s
+.PHONY : src/ga_visualizer.s
+
+# target to generate assembly for a file
+src/ga_visualizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/ga_visualizer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/ga_visualizer.cpp.s
+.PHONY : src/ga_visualizer.cpp.s
 
 src/hill_climber.o: src/hill_climber.cpp.o
 .PHONY : src/hill_climber.o
@@ -231,6 +363,7 @@ src/hill_climber.o: src/hill_climber.cpp.o
 # target to build an object file
 src/hill_climber.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/hill_climber.cpp.o
 .PHONY : src/hill_climber.cpp.o
 
 src/hill_climber.i: src/hill_climber.cpp.i
@@ -239,6 +372,7 @@ src/hill_climber.i: src/hill_climber.cpp.i
 # target to preprocess a source file
 src/hill_climber.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/hill_climber.cpp.i
 .PHONY : src/hill_climber.cpp.i
 
 src/hill_climber.s: src/hill_climber.cpp.s
@@ -247,7 +381,35 @@ src/hill_climber.s: src/hill_climber.cpp.s
 # target to generate assembly for a file
 src/hill_climber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/hill_climber.cpp.s
 .PHONY : src/hill_climber.cpp.s
+
+src/k_tournament_parent_selection.o: src/k_tournament_parent_selection.cpp.o
+.PHONY : src/k_tournament_parent_selection.o
+
+# target to build an object file
+src/k_tournament_parent_selection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/k_tournament_parent_selection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/k_tournament_parent_selection.cpp.o
+.PHONY : src/k_tournament_parent_selection.cpp.o
+
+src/k_tournament_parent_selection.i: src/k_tournament_parent_selection.cpp.i
+.PHONY : src/k_tournament_parent_selection.i
+
+# target to preprocess a source file
+src/k_tournament_parent_selection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/k_tournament_parent_selection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/k_tournament_parent_selection.cpp.i
+.PHONY : src/k_tournament_parent_selection.cpp.i
+
+src/k_tournament_parent_selection.s: src/k_tournament_parent_selection.cpp.s
+.PHONY : src/k_tournament_parent_selection.s
+
+# target to generate assembly for a file
+src/k_tournament_parent_selection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/k_tournament_parent_selection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/k_tournament_parent_selection.cpp.s
+.PHONY : src/k_tournament_parent_selection.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -255,6 +417,7 @@ src/main.o: src/main.cpp.o
 # target to build an object file
 src/main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -263,6 +426,7 @@ src/main.i: src/main.cpp.i
 # target to preprocess a source file
 src/main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -271,7 +435,116 @@ src/main.s: src/main.cpp.s
 # target to generate assembly for a file
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/mutation_chain.o: src/mutation_chain.cpp.o
+.PHONY : src/mutation_chain.o
+
+# target to build an object file
+src/mutation_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/mutation_chain.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/mutation_chain.cpp.o
+.PHONY : src/mutation_chain.cpp.o
+
+src/mutation_chain.i: src/mutation_chain.cpp.i
+.PHONY : src/mutation_chain.i
+
+# target to preprocess a source file
+src/mutation_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/mutation_chain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/mutation_chain.cpp.i
+.PHONY : src/mutation_chain.cpp.i
+
+src/mutation_chain.s: src/mutation_chain.cpp.s
+.PHONY : src/mutation_chain.s
+
+# target to generate assembly for a file
+src/mutation_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/mutation_chain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/mutation_chain.cpp.s
+.PHONY : src/mutation_chain.cpp.s
+
+src/parent_selection_operator.o: src/parent_selection_operator.cpp.o
+.PHONY : src/parent_selection_operator.o
+
+# target to build an object file
+src/parent_selection_operator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/parent_selection_operator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/parent_selection_operator.cpp.o
+.PHONY : src/parent_selection_operator.cpp.o
+
+src/parent_selection_operator.i: src/parent_selection_operator.cpp.i
+.PHONY : src/parent_selection_operator.i
+
+# target to preprocess a source file
+src/parent_selection_operator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/parent_selection_operator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/parent_selection_operator.cpp.i
+.PHONY : src/parent_selection_operator.cpp.i
+
+src/parent_selection_operator.s: src/parent_selection_operator.cpp.s
+.PHONY : src/parent_selection_operator.s
+
+# target to generate assembly for a file
+src/parent_selection_operator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/parent_selection_operator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/parent_selection_operator.cpp.s
+.PHONY : src/parent_selection_operator.cpp.s
+
+src/partial_shuffle.o: src/partial_shuffle.cpp.o
+.PHONY : src/partial_shuffle.o
+
+# target to build an object file
+src/partial_shuffle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/partial_shuffle.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/partial_shuffle.cpp.o
+.PHONY : src/partial_shuffle.cpp.o
+
+src/partial_shuffle.i: src/partial_shuffle.cpp.i
+.PHONY : src/partial_shuffle.i
+
+# target to preprocess a source file
+src/partial_shuffle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/partial_shuffle.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/partial_shuffle.cpp.i
+.PHONY : src/partial_shuffle.cpp.i
+
+src/partial_shuffle.s: src/partial_shuffle.cpp.s
+.PHONY : src/partial_shuffle.s
+
+# target to generate assembly for a file
+src/partial_shuffle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/partial_shuffle.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/partial_shuffle.cpp.s
+.PHONY : src/partial_shuffle.cpp.s
+
+src/single_point_crossover.o: src/single_point_crossover.cpp.o
+.PHONY : src/single_point_crossover.o
+
+# target to build an object file
+src/single_point_crossover.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/single_point_crossover.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/single_point_crossover.cpp.o
+.PHONY : src/single_point_crossover.cpp.o
+
+src/single_point_crossover.i: src/single_point_crossover.cpp.i
+.PHONY : src/single_point_crossover.i
+
+# target to preprocess a source file
+src/single_point_crossover.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/single_point_crossover.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/single_point_crossover.cpp.i
+.PHONY : src/single_point_crossover.cpp.i
+
+src/single_point_crossover.s: src/single_point_crossover.cpp.s
+.PHONY : src/single_point_crossover.s
+
+# target to generate assembly for a file
+src/single_point_crossover.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/single_point_crossover.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/single_point_crossover.cpp.s
+.PHONY : src/single_point_crossover.cpp.s
 
 src/standard_bit_mutation.o: src/standard_bit_mutation.cpp.o
 .PHONY : src/standard_bit_mutation.o
@@ -279,6 +552,7 @@ src/standard_bit_mutation.o: src/standard_bit_mutation.cpp.o
 # target to build an object file
 src/standard_bit_mutation.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/standard_bit_mutation.cpp.o
 .PHONY : src/standard_bit_mutation.cpp.o
 
 src/standard_bit_mutation.i: src/standard_bit_mutation.cpp.i
@@ -287,6 +561,7 @@ src/standard_bit_mutation.i: src/standard_bit_mutation.cpp.i
 # target to preprocess a source file
 src/standard_bit_mutation.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/standard_bit_mutation.cpp.i
 .PHONY : src/standard_bit_mutation.cpp.i
 
 src/standard_bit_mutation.s: src/standard_bit_mutation.cpp.s
@@ -295,6 +570,7 @@ src/standard_bit_mutation.s: src/standard_bit_mutation.cpp.s
 # target to generate assembly for a file
 src/standard_bit_mutation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/standard_bit_mutation.cpp.s
 .PHONY : src/standard_bit_mutation.cpp.s
 
 src/travelling_salesman.o: src/travelling_salesman.cpp.o
@@ -303,6 +579,7 @@ src/travelling_salesman.o: src/travelling_salesman.cpp.o
 # target to build an object file
 src/travelling_salesman.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/travelling_salesman.cpp.o
 .PHONY : src/travelling_salesman.cpp.o
 
 src/travelling_salesman.i: src/travelling_salesman.cpp.i
@@ -311,6 +588,7 @@ src/travelling_salesman.i: src/travelling_salesman.cpp.i
 # target to preprocess a source file
 src/travelling_salesman.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/travelling_salesman.cpp.i
 .PHONY : src/travelling_salesman.cpp.i
 
 src/travelling_salesman.s: src/travelling_salesman.cpp.s
@@ -319,7 +597,35 @@ src/travelling_salesman.s: src/travelling_salesman.cpp.s
 # target to generate assembly for a file
 src/travelling_salesman.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/travelling_salesman.cpp.s
 .PHONY : src/travelling_salesman.cpp.s
+
+src/uniform_crossover.o: src/uniform_crossover.cpp.o
+.PHONY : src/uniform_crossover.o
+
+# target to build an object file
+src/uniform_crossover.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_crossover.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_crossover.cpp.o
+.PHONY : src/uniform_crossover.cpp.o
+
+src/uniform_crossover.i: src/uniform_crossover.cpp.i
+.PHONY : src/uniform_crossover.i
+
+# target to preprocess a source file
+src/uniform_crossover.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_crossover.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_crossover.cpp.i
+.PHONY : src/uniform_crossover.cpp.i
+
+src/uniform_crossover.s: src/uniform_crossover.cpp.s
+.PHONY : src/uniform_crossover.s
+
+# target to generate assembly for a file
+src/uniform_crossover.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_crossover.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_crossover.cpp.s
+.PHONY : src/uniform_crossover.cpp.s
 
 src/uniform_permutation_initializer.o: src/uniform_permutation_initializer.cpp.o
 .PHONY : src/uniform_permutation_initializer.o
@@ -327,6 +633,7 @@ src/uniform_permutation_initializer.o: src/uniform_permutation_initializer.cpp.o
 # target to build an object file
 src/uniform_permutation_initializer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_permutation_initializer.cpp.o
 .PHONY : src/uniform_permutation_initializer.cpp.o
 
 src/uniform_permutation_initializer.i: src/uniform_permutation_initializer.cpp.i
@@ -335,6 +642,7 @@ src/uniform_permutation_initializer.i: src/uniform_permutation_initializer.cpp.i
 # target to preprocess a source file
 src/uniform_permutation_initializer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_permutation_initializer.cpp.i
 .PHONY : src/uniform_permutation_initializer.cpp.i
 
 src/uniform_permutation_initializer.s: src/uniform_permutation_initializer.cpp.s
@@ -343,6 +651,7 @@ src/uniform_permutation_initializer.s: src/uniform_permutation_initializer.cpp.s
 # target to generate assembly for a file
 src/uniform_permutation_initializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_permutation_initializer.cpp.s
 .PHONY : src/uniform_permutation_initializer.cpp.s
 
 src/uniform_pseudo_boolean_initializer.o: src/uniform_pseudo_boolean_initializer.cpp.o
@@ -351,6 +660,7 @@ src/uniform_pseudo_boolean_initializer.o: src/uniform_pseudo_boolean_initializer
 # target to build an object file
 src/uniform_pseudo_boolean_initializer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.o
 .PHONY : src/uniform_pseudo_boolean_initializer.cpp.o
 
 src/uniform_pseudo_boolean_initializer.i: src/uniform_pseudo_boolean_initializer.cpp.i
@@ -359,6 +669,7 @@ src/uniform_pseudo_boolean_initializer.i: src/uniform_pseudo_boolean_initializer
 # target to preprocess a source file
 src/uniform_pseudo_boolean_initializer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.i
 .PHONY : src/uniform_pseudo_boolean_initializer.cpp.i
 
 src/uniform_pseudo_boolean_initializer.s: src/uniform_pseudo_boolean_initializer.cpp.s
@@ -367,6 +678,7 @@ src/uniform_pseudo_boolean_initializer.s: src/uniform_pseudo_boolean_initializer
 # target to generate assembly for a file
 src/uniform_pseudo_boolean_initializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.s
 .PHONY : src/uniform_pseudo_boolean_initializer.cpp.s
 
 # Help Target
@@ -377,10 +689,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... EAL"
 	@echo "... EvolutionaryAlgorithms"
+	@echo "... matplot"
+	@echo "... nodesoup"
 	@echo "... src/benchmark_functions.o"
 	@echo "... src/benchmark_functions.i"
 	@echo "... src/benchmark_functions.s"
+	@echo "... src/custom_segment_crossover.o"
+	@echo "... src/custom_segment_crossover.i"
+	@echo "... src/custom_segment_crossover.s"
 	@echo "... src/elitist_ea.o"
 	@echo "... src/elitist_ea.i"
 	@echo "... src/elitist_ea.s"
@@ -390,18 +708,42 @@ help:
 	@echo "... src/exchange_mutation.o"
 	@echo "... src/exchange_mutation.i"
 	@echo "... src/exchange_mutation.s"
+	@echo "... src/fitness_proportional_parent_selection.o"
+	@echo "... src/fitness_proportional_parent_selection.i"
+	@echo "... src/fitness_proportional_parent_selection.s"
+	@echo "... src/ga_visualizer.o"
+	@echo "... src/ga_visualizer.i"
+	@echo "... src/ga_visualizer.s"
 	@echo "... src/hill_climber.o"
 	@echo "... src/hill_climber.i"
 	@echo "... src/hill_climber.s"
+	@echo "... src/k_tournament_parent_selection.o"
+	@echo "... src/k_tournament_parent_selection.i"
+	@echo "... src/k_tournament_parent_selection.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mutation_chain.o"
+	@echo "... src/mutation_chain.i"
+	@echo "... src/mutation_chain.s"
+	@echo "... src/parent_selection_operator.o"
+	@echo "... src/parent_selection_operator.i"
+	@echo "... src/parent_selection_operator.s"
+	@echo "... src/partial_shuffle.o"
+	@echo "... src/partial_shuffle.i"
+	@echo "... src/partial_shuffle.s"
+	@echo "... src/single_point_crossover.o"
+	@echo "... src/single_point_crossover.i"
+	@echo "... src/single_point_crossover.s"
 	@echo "... src/standard_bit_mutation.o"
 	@echo "... src/standard_bit_mutation.i"
 	@echo "... src/standard_bit_mutation.s"
 	@echo "... src/travelling_salesman.o"
 	@echo "... src/travelling_salesman.i"
 	@echo "... src/travelling_salesman.s"
+	@echo "... src/uniform_crossover.o"
+	@echo "... src/uniform_crossover.i"
+	@echo "... src/uniform_crossover.s"
 	@echo "... src/uniform_permutation_initializer.o"
 	@echo "... src/uniform_permutation_initializer.i"
 	@echo "... src/uniform_permutation_initializer.s"

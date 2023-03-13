@@ -1,52 +1,397 @@
 [
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/custom_segment_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/fitness_proportional_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/ga_visualizer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/k_tournament_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/mutation_chain.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/parent_selection_operator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/partial_shuffle.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/single_point_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/custom_segment_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/fitness_proportional_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/ga_visualizer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/k_tournament_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/mutation_chain.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/parent_selection_operator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/partial_shuffle.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/single_point_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/uniform_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/3rd_party",
+  "command": "/usr/bin/g++ -D_USE_MATH_DEFINES -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -fvisibility=hidden -o CMakeFiles/nodesoup.dir/nodesoup/src/algebra.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/algebra.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/algebra.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/3rd_party",
+  "command": "/usr/bin/g++ -D_USE_MATH_DEFINES -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -fvisibility=hidden -o CMakeFiles/nodesoup.dir/nodesoup/src/fruchterman_reingold.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/fruchterman_reingold.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/fruchterman_reingold.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/3rd_party",
+  "command": "/usr/bin/g++ -D_USE_MATH_DEFINES -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -fvisibility=hidden -o CMakeFiles/nodesoup.dir/nodesoup/src/kamada_kawai.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/kamada_kawai.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/kamada_kawai.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/3rd_party",
+  "command": "/usr/bin/g++ -D_USE_MATH_DEFINES -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -fvisibility=hidden -o CMakeFiles/nodesoup.dir/nodesoup/src/layout.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/layout.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/layout.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/3rd_party",
+  "command": "/usr/bin/g++ -D_USE_MATH_DEFINES -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -fvisibility=hidden -o CMakeFiles/nodesoup.dir/nodesoup/src/nodesoup.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/nodesoup.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/src/nodesoup.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/backend/backend_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/backend/backend_interface.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/backend/backend_interface.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/backend/gnuplot.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/backend/gnuplot.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/backend/gnuplot.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/backend/backend_registry.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/backend/backend_registry.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/backend/backend_registry.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/core/axes_type.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/axes_type.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/axes_type.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/core/axes_object.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/axes_object.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/axes_object.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/core/axis_type.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/axis_type.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/axis_type.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/core/figure_type.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/figure_type.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/figure_type.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/core/figure_registry.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/figure_registry.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/figure_registry.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/core/legend.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/legend.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/legend.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/core/line_spec.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/line_spec.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/core/line_spec.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/util/colors.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/colors.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/colors.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/util/common.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/common.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/common.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/util/contourc.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/contourc.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/contourc.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/util/world_cities.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_cities.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_cities.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/util/world_map_10m.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_map_10m.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_map_10m.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/util/world_map_50m.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_map_50m.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_map_50m.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/util/world_map_110m.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_map_110m.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/util/world_map_110m.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/bars.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/bars.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/bars.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/box_chart.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/box_chart.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/box_chart.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/circles.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/circles.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/circles.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/contours.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/contours.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/contours.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/error_bar.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/error_bar.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/error_bar.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/filled_area.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/filled_area.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/filled_area.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/function_line.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/function_line.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/function_line.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/histogram.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/histogram.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/histogram.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/labels.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/labels.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/labels.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/line.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/line.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/line.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/matrix.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/matrix.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/matrix.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/network.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/network.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/network.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/parallel_lines.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/parallel_lines.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/parallel_lines.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/stair.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/stair.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/stair.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/string_function.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/string_function.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/string_function.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/surface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/surface.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/surface.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/axes_objects/vectors.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/vectors.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/axes_objects/vectors.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/freestanding/axes_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/freestanding/axes_functions.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/freestanding/axes_functions.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/matplot",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DMATPLOT_HAS_FBUFSIZE -DNOMINMAX -Dcimg_display=0 -Dcimg_use_blas -Dcimg_use_png -Dcimg_use_zlib -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/cimg -isystem /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/3rd_party/nodesoup/include  -Og -g -Wall -Wextra -pedantic -Werror -o CMakeFiles/matplot.dir/freestanding/histcounts.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/freestanding/histcounts.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source/matplot/freestanding/histcounts.cpp"
 }
 ]
