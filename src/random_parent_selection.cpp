@@ -1,27 +1,17 @@
-#include "k_tournament_parent_selection.hpp"
+#include "random_parent_selection.hpp"
 #include <random>
-#include <iostream>
-KTournamentParentSelection::KTournamentParentSelection(int k, double doubleParentProbability)
+
+RandomParentSelection::RandomParentSelection(double doubleParentProbability)
 {
-    this->k = k;
     this->doubleParentProbability = doubleParentProbability;
 }
 
-int KTournamentParentSelection::chooseParent(double *populationFitnesses, int **population, int populationSize)
+int RandomParentSelection::chooseParent(double *populationFitnesses, int **population, int populationSize)
 {
-    int best = rand() % populationSize;
-    for (int j = 1; j < k; j++)
-    {
-        int candidate = rand() % populationSize;
-        if (populationFitnesses[candidate] > populationFitnesses[best])
-        {
-            best = candidate;
-        }
-    }
-    return best;
+    return rand() % populationSize;
 }
 
-void KTournamentParentSelection::select(double *populationFitnesses, int **population, int populationSize, int offspringSize, ParentSelection **out)
+void RandomParentSelection::select(double *populationFitnesses, int **population, int populationSize, int offspringSize, ParentSelection **out)
 {
     for (int i = 0; i < offspringSize; i++)
     {

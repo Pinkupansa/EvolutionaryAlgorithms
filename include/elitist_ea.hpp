@@ -11,15 +11,17 @@ public:
     ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer, CrossoverOperator *crossoverOperator, ParentSelectionOperator *parentSelectionOperator);
     ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer);
     ~ElitistEA();
-    void reproduce(double *populationFitnesses);
+    void reproduce();
     void mutate();
-    void select(double *offspringFitnesses, std::vector<int> *removedPopulation, std::vector<int> *addedOffspring);
+    void select(double *offspringFitnesses);
     void initialize();
     int **getCurrentPopulation();
     int **getCurrentOffspring();
     int getPopulationSize();
     int getChromosomeSize();
     int getOffspringSize();
+    void postInitialization(double *fitnesses);
+    double *getCurrentFitnesses();
 
 private:
     int populationSize;

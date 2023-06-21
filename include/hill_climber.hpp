@@ -17,6 +17,7 @@ public:
     int getChromosomeSize();
     int getPopulationSize();
     int getOffspringSize();
+    void postInitialization(double *fitnesses);
 
 private:
     int chromosomeSize;

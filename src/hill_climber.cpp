@@ -25,13 +25,9 @@ void HillClimber::initialize()
 
 void HillClimber::mutate()
 {
-    for (int i = 0; i < chromosomeSize; i++)
-    {
-        if (rand() % 100 < mutationRate * 100)
-        {
-            currentOffspring[i] = !currentOffspring[i];
-        }
-    }
+    // choose random bit to mutate
+    int bitToMutate = rand() % chromosomeSize;
+    currentOffspring[bitToMutate] = !currentOffspring[bitToMutate];
 }
 
 void HillClimber::reproduce(double *populationFitnesses)
@@ -83,4 +79,9 @@ int HillClimber::getPopulationSize()
 int HillClimber::getOffspringSize()
 {
     return 1;
+}
+
+void HillClimber::postInitialization(double *fitnesses)
+{
+    // do nothing
 }

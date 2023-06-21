@@ -5,6 +5,7 @@
 #include "problem_wrapper.hpp"
 #include <SDL2/SDL_ttf.h>
 #include "ga_visualizer.hpp"
+#include "ea_log.hpp"
 class EvolutionInterface
 {
 
@@ -14,6 +15,9 @@ public:
     void step();
     int *getBestIndividual();
     double getBestFitness();
+    bool checkStopCondition();
+    void displayProgress();
+    EALog getLog();
 
 private:
     SDL_Window *window;
@@ -24,6 +28,9 @@ private:
     GAVisualizer visualizer;
 
     ProblemWrapper *problem;
+
+    EALog log;
+
     double *populationFitnesses;
     double *offspringFitnesses;
 
@@ -38,7 +45,8 @@ private:
     void calculateInitialPopulationFitnesses();
     void calculateOffspringFitnesses();
     void printBestIndividual();
-    void recalculatePopulationFitnesses(std::vector<int> &removedPopulation, std::vector<int> &addedOffspring);
+    void refreshExtremeFitnesses();
+    void fillLog();
     int graphRefreshRate;
     TTF_Font *font;
 };

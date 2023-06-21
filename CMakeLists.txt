@@ -65,3 +65,6 @@ if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
     target_link_libraries(EAL ${Boost_LIBRARIES})
 endif()
+
+#add compiler optimization flags
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")

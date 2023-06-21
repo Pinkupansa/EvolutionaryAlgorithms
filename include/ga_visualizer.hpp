@@ -3,12 +3,14 @@
 
 #include <matplot/matplot.h>
 #include <vector>
+#include "ea_log.hpp"
 
 class GAVisualizer
 {
 public:
     GAVisualizer();
     void refresh(double newBestFitness, double newWorstFitness);
+    void displayLog(EALog log);
 
 private:
     std::vector<double> bestFitnesses;

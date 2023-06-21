@@ -1,7 +1,7 @@
 #include "evolution_interface.hpp"
 #include <random>
 #include <SDL2_framerate.h>
-
+#define VERBOSE 0
 EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, ProblemWrapper *problem, SDL_Window *window, SDL_Renderer *renderer, int graphRefreshRate)
 {
     this->algorithm = algorithm;
@@ -9,10 +9,7 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     this->window = window;
     this->renderer = renderer;
     this->currentGeneration = 1;
-    std::cout << "Initializing population fitnesses" << std::endl;
     this->populationFitnesses = new double[algorithm->getPopulationSize()];
-
-    std::cout << "Initializing offspring fitnesses" << std::endl;
     this->offspringFitnesses = new double[algorithm->getPopulationSize()];
 
     this->bestIndividualIndex = 0;
@@ -24,13 +21,15 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     this->font = TTF_OpenFont("arial.ttf", 24);
 
     std::cout << "Initializing EA" << std::endl;
+    algorithm->log = &log;
     algorithm->initialize();
     srand(time(NULL));
     std::cout << "EA initialized" << std::endl;
     calculateInitialPopulationFitnesses();
+    algorithm->postInitialization(populationFitnesses);
     printBestIndividual();
     problem->visualize(getBestIndividual(), window, renderer);
-    visualizer.refresh(bestFitness, worstFitness);
+    // visualizer.refresh(bestFitness, worstFitness);
     this->graphRefreshRate = graphRefreshRate;
 }
 
@@ -40,59 +39,34 @@ EvolutionInterface::~EvolutionInterface()
     delete[] populationFitnesses;
     delete[] offspringFitnesses;
 }
-void EvolutionInterface::recalculatePopulationFitnesses(std::vector<int> &removedPopulation, std::vector<int> &addedOffspring)
-{
-
-    for (int i = 0; i < removedPopulation.size(); i++)
-    {
-        populationFitnesses[removedPopulation[i]] = offspringFitnesses[addedOffspring[i]];
-        if (populationFitnesses[removedPopulation[i]] > bestFitness)
-        {
-            bestFitness = populationFitnesses[removedPopulation[i]];
-            bestIndividualIndex = removedPopulation[i];
-        }
-    }
-    worstFitness = 10000000;
-    for (int i = 0; i < algorithm->getPopulationSize(); i++)
-    {
-        if (populationFitnesses[i] < worstFitness)
-        {
-            worstFitness = populationFitnesses[i];
-            worstIndividualIndex = i;
-        }
-    }
-}
 
 void EvolutionInterface::step()
 {
-    std::cout << "Generation " << currentGeneration << std::endl;
-    algorithm->reproduce(populationFitnesses);
+    // std::cout << "Generation " << currentGeneration << "\r";
+    algorithm->reproduce();
     algorithm->mutate();
     calculateOffspringFitnesses();
-    std::vector<int> removedPopulation;
-    std::vector<int> addedOffspring;
-    algorithm->select(offspringFitnesses, &removedPopulation, &addedOffspring);
-    // print removedPopulation
-    /*for (int i = 0; i < removedPopulation.size(); i++)
-    {
-        std::cout << removedPopulation[i] << " ";
-    }
-    std::cout << std::endl;
-    // print addedOffspring
-    for (int i = 0; i < addedOffspring.size(); i++)
-    {
-        std::cout << addedOffspring[i] << " ";
-    }*/
-    recalculatePopulationFitnesses(removedPopulation, addedOffspring);
+    algorithm->select(offspringFitnesses);
+    refreshExtremeFitnesses();
 
+#if VERBOSE
     printBestIndividual();
+#endif
     currentGeneration++;
 
-    if (currentGeneration % graphRefreshRate == 0)
+    if (graphRefreshRate > 0 && currentGeneration % graphRefreshRate == 0)
     {
         problem->visualize(getBestIndividual(), window, renderer);
         visualizer.refresh(bestFitness, worstFitness);
     }
+}
+
+void EvolutionInterface::refreshExtremeFitnesses()
+{
+    bestIndividualIndex = algorithm->getPopulationSize() - 1;
+    worstIndividualIndex = 0;
+    bestFitness = algorithm->getCurrentFitnesses()[algorithm->getPopulationSize() - 1];
+    worstFitness = algorithm->getCurrentFitnesses()[0];
 }
 
 void EvolutionInterface::calculateInitialPopulationFitnesses()
@@ -146,4 +120,14 @@ void EvolutionInterface::printBestIndividual()
         std::cout << bestIndividual[i] << " ";
     }
     std::cout << "fitness : " << bestFitness << std::endl;
+}
+
+void EvolutionInterface::displayProgress()
+{
+    visualizer.displayLog(log);
+}
+
+bool EvolutionInterface::checkStopCondition()
+{
+    return (algorithm->generationStop > -1 && currentGeneration >= algorithm->generationStop) || (algorithm->fitnessStop > -1 && bestFitness >= algorithm->fitnessStop);
 }

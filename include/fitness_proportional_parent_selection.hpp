@@ -11,7 +11,7 @@ class FitnessProportionalParentSelection : public ParentSelectionOperator
 {
 public:
     FitnessProportionalParentSelection(double doubleParentProbability);
-    void select(double *populationFitnesses, int **population, int populationSize, int offspringSize, std::vector<ParentSelection *> *out);
+    void select(double *populationFitnesses, int **population, int populationSize, int offspringSize, ParentSelection **out);
 
 private:
     double doubleParentProbability;

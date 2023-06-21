@@ -1,192 +1,202 @@
 [
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/custom_segment_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/custom_segment_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/fitness_proportional_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/fitness_proportional_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/ga_visualizer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/ga_visualizer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/k_tournament_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/k_tournament_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/mutation_chain.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/mutation_chain.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/parent_selection_operator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/parent_selection_operator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/partial_shuffle.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/partial_shuffle.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/single_point_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/random_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/random_parent_selection.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/random_parent_selection.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/single_point_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/custom_segment_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/custom_segment_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/custom_segment_crossover.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/elitist_ea.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/elitist_ea.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/evolution_interface.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/evolution_interface.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/exchange_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/exchange_mutation.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/fitness_proportional_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/fitness_proportional_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/fitness_proportional_parent_selection.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/ga_visualizer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/ga_visualizer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/ga_visualizer.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/hill_climber.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/hill_climber.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/k_tournament_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/k_tournament_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/k_tournament_parent_selection.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/main.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/main.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/mutation_chain.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/mutation_chain.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/mutation_chain.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/parent_selection_operator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/parent_selection_operator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/parent_selection_operator.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/partial_shuffle.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/partial_shuffle.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/partial_shuffle.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/single_point_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/random_parent_selection.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/random_parent_selection.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/random_parent_selection.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/single_point_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/single_point_crossover.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/standard_bit_mutation.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/standard_bit_mutation.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/travelling_salesman.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/travelling_salesman.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/uniform_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/uniform_crossover.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_crossover.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/uniform_permutation_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_permutation_initializer.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
-  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2 -g -o CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp"
 },
 {

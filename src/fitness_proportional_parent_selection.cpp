@@ -8,7 +8,7 @@ FitnessProportionalParentSelection::FitnessProportionalParentSelection(double do
     this->doubleParentProbability = doubleParentProbability;
 }
 
-void FitnessProportionalParentSelection::select(double *populationFitnesses, int **population, int populationSize, int offspringSize, std::vector<ParentSelection *> *out)
+void FitnessProportionalParentSelection::select(double *populationFitnesses, int **population, int populationSize, int offspringSize, ParentSelection **out)
 {
     double totalFitness = 0;
     for (int i = 0; i < populationSize; i++)
@@ -34,13 +34,13 @@ void FitnessProportionalParentSelection::select(double *populationFitnesses, int
             ParentSelection *parentSelection = new ParentSelection(2);
             parentSelection->getParentsIndices()[0] = parentIndex;
             parentSelection->getParentsIndices()[1] = secondParentIndex;
-            out->push_back(parentSelection);
+            out[i] = parentSelection;
         }
         else
         {
             ParentSelection *parentSelection = new ParentSelection(1);
             parentSelection->getParentsIndices()[0] = parentIndex;
-            out->push_back(parentSelection);
+            out[i] = parentSelection;
         }
     }
 }

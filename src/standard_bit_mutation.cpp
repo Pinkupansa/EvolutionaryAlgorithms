@@ -8,10 +8,10 @@ StandardBitMutation::StandardBitMutation(double mutationRate)
 
 void StandardBitMutation::mutate(int *chromosome, int chromosomeSize)
 {
-    
+
     for (int i = 0; i < chromosomeSize; i++)
     {
-        if (rand() % 100 < mutationRate * 100)
+        if ((double)rand() / RAND_MAX <= mutationRate)
         {
             chromosome[i] = !chromosome[i];
         }

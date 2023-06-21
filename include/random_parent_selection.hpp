@@ -1,18 +1,17 @@
-#ifndef K_TOURNAMENT_PARENT_SELECTION_HPP
-#define K_TOURNAMENT_PARENT_SELECTION_HPP
+#ifndef RANDOM_PARENT_SELECTION_HPP
+#define RANDOM_PARENT_SELECTION_HPP
 
 #include "parent_selection_operator.hpp"
 
-class KTournamentParentSelection : public ParentSelectionOperator
+class RandomParentSelection : public ParentSelectionOperator
 {
 public:
-    KTournamentParentSelection(int k, double doubleParentProbability);
+    RandomParentSelection(double doubleParentProbability);
     void select(double *populationFitnesses, int **population, int populationSize, int offspringSize, ParentSelection **out);
 
 private:
-    int k;
     double doubleParentProbability;
     int chooseParent(double *populationFitnesses, int **population, int populationSize);
 };
 
-#endif // K_TOURNAMENT_PARENT_SELECTION_HPP
+#endif // RANDOM_PARENT_SELECTION_HPP
