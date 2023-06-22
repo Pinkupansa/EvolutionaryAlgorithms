@@ -5,6 +5,8 @@
 #include "initializer.hpp"
 #include "parent_selection_operator.hpp"
 #include "crossover_operator.hpp"
+#include <time.h>
+
 class ElitistEA : public EvolutionaryAlgorithm
 {
 public:
@@ -22,6 +24,7 @@ public:
     int getOffspringSize();
     void postInitialization(double *fitnesses);
     double *getCurrentFitnesses();
+    float timeSpentInCopy;
 
 private:
     int populationSize;

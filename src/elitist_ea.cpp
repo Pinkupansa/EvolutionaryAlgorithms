@@ -36,6 +36,8 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
     {
         this->offspring[i] = new int[chromosomeSize];
     }
+
+    this->timeSpentInCopy = 0;
 }
 
 ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, MutationOperator *mutationOperator, Initializer *initializer, CrossoverOperator *crossoverOperator, ParentSelectionOperator *parentSelectionOperator)
@@ -63,6 +65,7 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
 
     this->parentSelectionOperator = parentSelectionOperator;
     this->crossoverOperator = crossoverOperator;
+    this->timeSpentInCopy = 0;
 }
 
 ElitistEA::~ElitistEA()
@@ -118,10 +121,12 @@ void ElitistEA::reproduce()
 
 void ElitistEA::mutate()
 {
+    float startTime = clock();
     for (int i = 0; i < offspringSize; i++)
     {
         mutationOperator->mutate(offspring[i], chromosomeSize);
     }
+    timeSpentInCopy += clock() - startTime;
 }
 
 void ElitistEA::select(double *offspringFitnesses)
@@ -130,11 +135,14 @@ void ElitistEA::select(double *offspringFitnesses)
     binary_insert_sort_selection(populationSize, populationFitnesses, offspringSize, offspringFitnesses, ranking);
     int newPopulation[populationSize][chromosomeSize];
     double newPopulationFitnesses[populationSize];
+
     for (int i = offspringSize; i < populationSize + offspringSize; i++)
     {
         if (ranking[i] < populationSize)
         {
+
             copy(population[ranking[i]], newPopulation[i - offspringSize], chromosomeSize);
+
             newPopulationFitnesses[i - offspringSize] = populationFitnesses[ranking[i]];
         }
         else

@@ -17,6 +17,7 @@ public:
     double getBestFitness();
     bool checkStopCondition();
     void displayProgress();
+    EvolutionaryAlgorithm *getAlgo();
     EALog getLog();
 
 private:

@@ -54,6 +54,7 @@ void evolutionLoop(EvolutionInterface *evolutionInterface)
         if (evolutionInterface->checkStopCondition())
         {
             std::cout << "Time elapsed: " << (clock() - start) / (double)CLOCKS_PER_SEC << std::endl;
+            std::cout << "Time spent in copy" << ((ElitistEA *)(evolutionInterface->getAlgo()))->timeSpentInCopy / (double)CLOCKS_PER_SEC << std::endl;
             evolutionInterface->displayProgress();
 
             while (true)
@@ -151,7 +152,7 @@ void jump_test(SDL_Window *window, SDL_Renderer *renderer)
 
 void leadingOnes_test(SDL_Window *window, SDL_Renderer *renderer)
 {
-    int chromosomeSize = 100;
+    int chromosomeSize = 200;
 
     srand(time(NULL));
 
@@ -160,7 +161,7 @@ void leadingOnes_test(SDL_Window *window, SDL_Renderer *renderer)
     UniformCrossover crossoverOperator;
     // KTournamentParentSelection selectionOperator(2, 0.25);
     // FitnessProportionalParentSelection selectionOperator(0.6);
-    RandomParentSelection selectionOperator(0.6);
+    RandomParentSelection selectionOperator(0);
     StandardBitMutation mutationOperator(1.0 / (double)chromosomeSize);
 
     UniformPseudoBooleanInitializer initializer;

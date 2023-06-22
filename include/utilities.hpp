@@ -3,6 +3,7 @@
 #define UTILITIES_HPP
 #include <vector>
 #include <algorithm>
+#include <random>
 // include dictionaries
 inline void binary_insert_sort_selection(int populationSize, double *populationFitnesses,
                                          int offspringSize, double *offspringFitnesses, int *ranking)

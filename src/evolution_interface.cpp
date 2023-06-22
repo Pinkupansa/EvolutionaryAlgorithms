@@ -27,6 +27,7 @@ EvolutionInterface::EvolutionInterface(EvolutionaryAlgorithm *algorithm, Problem
     std::cout << "EA initialized" << std::endl;
     calculateInitialPopulationFitnesses();
     algorithm->postInitialization(populationFitnesses);
+    refreshExtremeFitnesses();
     printBestIndividual();
     problem->visualize(getBestIndividual(), window, renderer);
     // visualizer.refresh(bestFitness, worstFitness);
@@ -71,23 +72,10 @@ void EvolutionInterface::refreshExtremeFitnesses()
 
 void EvolutionInterface::calculateInitialPopulationFitnesses()
 {
-    bestFitness = 0;
-    worstFitness = 1000000000;
     int **individuals = algorithm->getCurrentPopulation();
     for (int i = 0; i < algorithm->getPopulationSize(); i++)
     {
-
         populationFitnesses[i] = problem->evaluate(individuals[i]);
-        if (populationFitnesses[i] > bestFitness)
-        {
-            bestFitness = populationFitnesses[i];
-            bestIndividualIndex = i;
-        }
-        if (populationFitnesses[i] < worstFitness)
-        {
-            worstFitness = populationFitnesses[i];
-            worstIndividualIndex = i;
-        }
     }
 }
 
@@ -130,4 +118,9 @@ void EvolutionInterface::displayProgress()
 bool EvolutionInterface::checkStopCondition()
 {
     return (algorithm->generationStop > -1 && currentGeneration >= algorithm->generationStop) || (algorithm->fitnessStop > -1 && bestFitness >= algorithm->fitnessStop);
+}
+
+EvolutionaryAlgorithm *EvolutionInterface::getAlgo()
+{
+    return algorithm;
 }
