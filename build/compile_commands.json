@@ -101,6 +101,11 @@
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EvolutionaryAlgorithms.dir/src/xoroshiro_generator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/xoroshiro_generator.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/xoroshiro_generator.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
   "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/benchmark_functions.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/benchmark_functions.cpp"
 },
@@ -198,6 +203,21 @@
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
   "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp",
   "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/uniform_pseudo_boolean_initializer.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_GRAPH_DYN_LINK -DBOOST_REGEX_DYN_LINK -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source -isystem /usr/include/SDL2  -O3 -g -o CMakeFiles/EAL.dir/src/xoroshiro_generator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/xoroshiro_generator.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/xoroshiro_generator.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source  -O3 -g -o CMakeFiles/xoroshiro_test.dir/test/xoroshiro_test.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/test/xoroshiro_test.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/test/xoroshiro_test.cpp"
+},
+{
+  "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build",
+  "command": "/usr/bin/g++ -DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP -DNOMINMAX -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/include -I/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/cmake/matplotplusplus/source  -O3 -g -o CMakeFiles/xoroshiro_test.dir/src/xoroshiro_generator.cpp.o -c /home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/xoroshiro_generator.cpp",
+  "file": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/src/xoroshiro_generator.cpp"
 },
 {
   "directory": "/home/general_xaniux/Documents/Code/c++/EvolutionaryAlgorithms/build/cmake/matplotplusplus/source/3rd_party",

@@ -68,3 +68,8 @@ endif()
 
 #add compiler optimization flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+
+#add a test executable for xoroshiro
+add_executable(xoroshiro_test test/xoroshiro_test.cpp src/xoroshiro_generator.cpp)
+target_include_directories(xoroshiro_test PUBLIC include)
+target_link_libraries(xoroshiro_test matplot)

@@ -1,10 +1,9 @@
 #include "exchange_mutation.hpp"
-#include <random>
 
 void ExchangeMutation::mutate(int *chromosome, int chromosomeSize)
 {
-    int i = rand() % chromosomeSize;
-    int j = rand() % chromosomeSize;
+    int i = generator.uniformInt(0, chromosomeSize - 1);
+    int j = generator.uniformInt(0, chromosomeSize - 1);
 
     int temp = chromosome[i];
     chromosome[i] = chromosome[j];

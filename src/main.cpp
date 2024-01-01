@@ -15,6 +15,10 @@
 #include "selection_operators.hpp"
 #include "time.h"
 #include "utilities.hpp"
+
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
+
 // Function that creates a fully operational SDL2 window
 SDL_Window *createWindow(int width, int height, const char *title)
 {
@@ -44,13 +48,6 @@ void evolutionLoop(EvolutionInterface *evolutionInterface)
     SDL_Event ev;
     while (true)
     {
-        while (SDL_PollEvent(&ev))
-        {
-            if (ev.type == SDL_QUIT)
-            {
-                return;
-            }
-        }
         if (evolutionInterface->checkStopCondition())
         {
             std::cout << "Time elapsed: " << (clock() - start) / (double)CLOCKS_PER_SEC << std::endl;
@@ -66,27 +63,27 @@ void evolutionLoop(EvolutionInterface *evolutionInterface)
                         return;
                     }
                 }
-                SDL_Delay(0);
+                // SDL_Delay(0);
             }
         }
         evolutionInterface->step();
 
-        SDL_Delay(0);
+        // SDL_Delay(0);
     }
 }
 void ts_test(SDL_Window *window, SDL_Renderer *renderer)
 {
-    int chromosomeSize = 100;
+    int chromosomeSize = 20;
 
-    srand(1);
+    srand(time(NULL));
 
     // create chromosomeSize random cities
     int **cities = new int *[chromosomeSize];
     for (int i = 0; i < chromosomeSize; i++)
     {
         cities[i] = new int[2];
-        cities[i][0] = rand() % 1000;
-        cities[i][1] = rand() % 1000;
+        cities[i][0] = rand() % WINDOW_WIDTH;
+        cities[i][1] = rand() % WINDOW_HEIGHT;
     }
 
     TravellingSalesman ts(chromosomeSize, cities);
@@ -101,7 +98,8 @@ void ts_test(SDL_Window *window, SDL_Renderer *renderer)
     UniformPermutationInitializer initializer;
     ElitistEA elitist(100, 100, chromosomeSize, &mutationOperator, &initializer);
     // HillClimber hillClimber(chromosomeSize, 1);
-    EvolutionInterface evolutionInterface(&elitist, &ts, window, renderer, 100);
+    elitist.generationStop = 100000;
+    EvolutionInterface evolutionInterface(&elitist, &ts, window, renderer, 1000);
 
     evolutionLoop(&evolutionInterface);
 }
@@ -145,6 +143,7 @@ void jump_test(SDL_Window *window, SDL_Renderer *renderer)
     UniformPseudoBooleanInitializer initializer;
     ElitistEA elitist(1000, 500, chromosomeSize, &mutationOperator, &initializer, &crossoverOperator, &selectionOperator);
     // HillClimber hillClimber(chromosomeSize, 1);
+    elitist.generationStop = 100000;
     EvolutionInterface evolutionInterface(&elitist, &jump, window, renderer, 100);
 
     evolutionLoop(&evolutionInterface);
@@ -152,7 +151,7 @@ void jump_test(SDL_Window *window, SDL_Renderer *renderer)
 
 void leadingOnes_test(SDL_Window *window, SDL_Renderer *renderer)
 {
-    int chromosomeSize = 200;
+    int chromosomeSize = 400;
 
     srand(time(NULL));
 
@@ -161,13 +160,13 @@ void leadingOnes_test(SDL_Window *window, SDL_Renderer *renderer)
     UniformCrossover crossoverOperator;
     // KTournamentParentSelection selectionOperator(2, 0.25);
     // FitnessProportionalParentSelection selectionOperator(0.6);
-    RandomParentSelection selectionOperator(0);
+    RandomParentSelection selectionOperator(0.6);
     StandardBitMutation mutationOperator(1.0 / (double)chromosomeSize);
 
     UniformPseudoBooleanInitializer initializer;
-    ElitistEA elitist(3, 1, chromosomeSize, &mutationOperator, &initializer, &crossoverOperator, &selectionOperator);
+    ElitistEA elitist(2, 1, chromosomeSize, &mutationOperator, &initializer, &crossoverOperator, &selectionOperator);
     elitist.fitnessStop = chromosomeSize;
-    elitist.generationStop = 100000;
+    elitist.generationStop = 1000000;
     // HillClimber hillClimber(chromosomeSize, 1);
     EvolutionInterface evolutionInterface(&elitist, &leadingOnes, window, renderer, 0);
 
@@ -178,7 +177,7 @@ int main(int argc, char **argv)
 {
 
     // Create a SDL window
-    SDL_Window *window = createWindow(1000, 1000, "Genetic Algorithms");
+    SDL_Window *window = createWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Genetic Algorithms");
     SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
     // jump_test(window, renderer);

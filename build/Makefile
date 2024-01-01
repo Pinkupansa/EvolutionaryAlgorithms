@@ -143,6 +143,19 @@ EAL/fast:
 .PHONY : EAL/fast
 
 #=============================================================================
+# Target rules for targets named xoroshiro_test
+
+# Build rule for target.
+xoroshiro_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xoroshiro_test
+.PHONY : xoroshiro_test
+
+# fast build rule for target.
+xoroshiro_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xoroshiro_test.dir/build.make CMakeFiles/xoroshiro_test.dir/build
+.PHONY : xoroshiro_test/fast
+
+#=============================================================================
 # Target rules for targets named nodesoup
 
 # Build rule for target.
@@ -708,6 +721,60 @@ src/uniform_pseudo_boolean_initializer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/uniform_pseudo_boolean_initializer.cpp.s
 .PHONY : src/uniform_pseudo_boolean_initializer.cpp.s
 
+src/xoroshiro_generator.o: src/xoroshiro_generator.cpp.o
+.PHONY : src/xoroshiro_generator.o
+
+# target to build an object file
+src/xoroshiro_generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/xoroshiro_generator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/xoroshiro_generator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xoroshiro_test.dir/build.make CMakeFiles/xoroshiro_test.dir/src/xoroshiro_generator.cpp.o
+.PHONY : src/xoroshiro_generator.cpp.o
+
+src/xoroshiro_generator.i: src/xoroshiro_generator.cpp.i
+.PHONY : src/xoroshiro_generator.i
+
+# target to preprocess a source file
+src/xoroshiro_generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/xoroshiro_generator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/xoroshiro_generator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xoroshiro_test.dir/build.make CMakeFiles/xoroshiro_test.dir/src/xoroshiro_generator.cpp.i
+.PHONY : src/xoroshiro_generator.cpp.i
+
+src/xoroshiro_generator.s: src/xoroshiro_generator.cpp.s
+.PHONY : src/xoroshiro_generator.s
+
+# target to generate assembly for a file
+src/xoroshiro_generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EvolutionaryAlgorithms.dir/build.make CMakeFiles/EvolutionaryAlgorithms.dir/src/xoroshiro_generator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EAL.dir/build.make CMakeFiles/EAL.dir/src/xoroshiro_generator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xoroshiro_test.dir/build.make CMakeFiles/xoroshiro_test.dir/src/xoroshiro_generator.cpp.s
+.PHONY : src/xoroshiro_generator.cpp.s
+
+test/xoroshiro_test.o: test/xoroshiro_test.cpp.o
+.PHONY : test/xoroshiro_test.o
+
+# target to build an object file
+test/xoroshiro_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xoroshiro_test.dir/build.make CMakeFiles/xoroshiro_test.dir/test/xoroshiro_test.cpp.o
+.PHONY : test/xoroshiro_test.cpp.o
+
+test/xoroshiro_test.i: test/xoroshiro_test.cpp.i
+.PHONY : test/xoroshiro_test.i
+
+# target to preprocess a source file
+test/xoroshiro_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xoroshiro_test.dir/build.make CMakeFiles/xoroshiro_test.dir/test/xoroshiro_test.cpp.i
+.PHONY : test/xoroshiro_test.cpp.i
+
+test/xoroshiro_test.s: test/xoroshiro_test.cpp.s
+.PHONY : test/xoroshiro_test.s
+
+# target to generate assembly for a file
+test/xoroshiro_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xoroshiro_test.dir/build.make CMakeFiles/xoroshiro_test.dir/test/xoroshiro_test.cpp.s
+.PHONY : test/xoroshiro_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -720,6 +787,7 @@ help:
 	@echo "... EvolutionaryAlgorithms"
 	@echo "... matplot"
 	@echo "... nodesoup"
+	@echo "... xoroshiro_test"
 	@echo "... src/benchmark_functions.o"
 	@echo "... src/benchmark_functions.i"
 	@echo "... src/benchmark_functions.s"
@@ -780,6 +848,12 @@ help:
 	@echo "... src/uniform_pseudo_boolean_initializer.o"
 	@echo "... src/uniform_pseudo_boolean_initializer.i"
 	@echo "... src/uniform_pseudo_boolean_initializer.s"
+	@echo "... src/xoroshiro_generator.o"
+	@echo "... src/xoroshiro_generator.i"
+	@echo "... src/xoroshiro_generator.s"
+	@echo "... test/xoroshiro_test.o"
+	@echo "... test/xoroshiro_test.i"
+	@echo "... test/xoroshiro_test.s"
 .PHONY : help
 
 

@@ -2,12 +2,14 @@
 #define UNIFORM_CROSSOVER_HPP
 
 #include "crossover_operator.hpp"
-#include <random>
-
+#include "xoroshiro_generator.hpp"
 class UniformCrossover : public CrossoverOperator
 {
-    public:
-        void crossover(ParentSelection* parentSelection, int chromosomeSize, int** population, int* outOffspring);
+public:
+    void crossover(ParentSelection *parentSelection, int chromosomeSize, int **population, int *outOffspring);
+
+private:
+    XoroshiroGenerator generator;
 };
 
 #endif

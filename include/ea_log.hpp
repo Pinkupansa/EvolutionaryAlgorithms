@@ -21,6 +21,7 @@ public:
             {
                 delete parentSelections[i][j];
             }
+            delete[] parentSelections[i];
         }
     }
     void addGeneration(double bestFitness, double worstFitness, int populationSize, int offspringSize, ParentSelection **parentSelection)

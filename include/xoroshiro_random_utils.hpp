@@ -1,0 +1,4 @@
+#ifndef XOROSHIRO_UTILS_HPP
+#define XOROSHIRO_UTILS_HPP
+
+#endif

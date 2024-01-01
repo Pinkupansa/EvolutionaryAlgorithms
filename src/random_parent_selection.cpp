@@ -8,7 +8,7 @@ RandomParentSelection::RandomParentSelection(double doubleParentProbability)
 
 int RandomParentSelection::chooseParent(double *populationFitnesses, int **population, int populationSize)
 {
-    return rand() % populationSize;
+    return generator.uniformInt(0, populationSize - 1);
 }
 
 void RandomParentSelection::select(double *populationFitnesses, int **population, int populationSize, int offspringSize, ParentSelection **out)
@@ -17,7 +17,7 @@ void RandomParentSelection::select(double *populationFitnesses, int **population
     {
 
         int parent = chooseParent(populationFitnesses, population, populationSize);
-        double r = (double)rand() / RAND_MAX;
+        double r = generator.uniformDouble(0, 1);
 
         if (r < doubleParentProbability)
         {

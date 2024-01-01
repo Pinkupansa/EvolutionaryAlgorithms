@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <iostream>
 #include "k_tournament_parent_selection.hpp"
-#include "fitness_proportional_parent_selection.hpp"
+#include "random_parent_selection.hpp"
 #include "uniform_crossover.hpp"
 #include <vector>
 #include "utilities.hpp"
@@ -25,7 +25,7 @@ ElitistEA::ElitistEA(int populationSize, int offspringSize, int chromosomeSize, 
     this->mutationOperator = mutationOperator;
     this->initializer = initializer;
     this->crossoverOperator = new UniformCrossover();
-    this->parentSelectionOperator = new FitnessProportionalParentSelection(0);
+    this->parentSelectionOperator = new KTournamentParentSelection(10, 0);
 
     for (int i = 0; i < populationSize; i++)
     {
@@ -73,8 +73,12 @@ ElitistEA::~ElitistEA()
     for (int i = 0; i < populationSize; i++)
     {
         delete[] population[i];
+    }
+    for (int i = 0; i < offspringSize; i++)
+    {
         delete[] offspring[i];
     }
+
     delete[] population;
     delete[] offspring;
     delete[] populationFitnesses;
@@ -109,7 +113,10 @@ void ElitistEA::reproduce()
         }
         else
         {
+            clock_t start = clock();
             crossoverOperator->crossover(parentSelections[i], chromosomeSize, population, offspring[i]);
+            clock_t end = clock();
+            timeSpentInCopy += end - start;
         }
     }
     log->addGeneration(populationFitnesses[populationSize - 1], populationFitnesses[0], populationSize, offspringSize, parentSelections);
@@ -121,12 +128,10 @@ void ElitistEA::reproduce()
 
 void ElitistEA::mutate()
 {
-    float startTime = clock();
     for (int i = 0; i < offspringSize; i++)
     {
         mutationOperator->mutate(offspring[i], chromosomeSize);
     }
-    timeSpentInCopy += clock() - startTime;
 }
 
 void ElitistEA::select(double *offspringFitnesses)

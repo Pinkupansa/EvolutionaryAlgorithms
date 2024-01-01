@@ -2,7 +2,8 @@
 #define STANDARD_BIT_MUTATION_HPP
 
 #include "mutation_operator.hpp"
-#include <random>
+#include "xoroshiro_generator.hpp"
+
 class StandardBitMutation : public MutationOperator
 {
 public:
@@ -11,8 +12,7 @@ public:
 
 private:
     double mutationRate;
-    // urng is a uniform random number generator
-    std::default_random_engine urng;
+    XoroshiroGenerator generator;
 };
 
 #endif // STANDARD_BIT_MUTATION_HPP
